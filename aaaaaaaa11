@@ -1,0 +1,8 @@
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+ALTER TABLE Card ADD COLUMN AvailableForInstallments BOOLEAN;
+ALTER TABLE Card ADD COLUMN AvailableForPoints BOOLEAN;
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

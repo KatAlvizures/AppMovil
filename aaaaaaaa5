@@ -1,0 +1,11 @@
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Available Cards
+ALTER TABLE AvailableCards ADD COLUMN CardInstCode STRING;
+ALTER TABLE AvailableCards ADD COLUMN CardBrand INTEGER;
+ALTER TABLE AvailableCards ADD COLUMN CardType INTEGER;
+ALTER TABLE AvailableCards ADD COLUMN CardName STRING;
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
