@@ -1,0 +1,189 @@
+{
+  "appInfo": {},
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "type": "progressbar",
+        "id": "progressbar",
+        "required": true,
+        "progressbar": {
+          "meta": {
+            "step": 15,
+            "totalSteps": 100,
+            "barColor": "#00C1D4",
+            "barBackgroundColor": "#a1edf5"
+          },
+          "title": {
+            "meta": {
+              "text": "Detalle de tu crédito",
+              "textSize": 22,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#003865"
+            }
+          }
+        }
+      },
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "¡Creamos algo especial para ti!",
+            "textSize": 16,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#3E729C"
+          }
+        }
+      },
+      {
+        "type": "summaryQuotation",
+        "id": "summaryQuotation",
+        "required": true,
+        "header": {
+          "status": {
+            "text": "Aprobada",
+            "color": "#BBF7DC",
+            "dotColor": "#41BB72"
+          },
+          "title": {
+            "meta": {
+              "text": "Tu cotización",
+              "textSize": 16,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#00C1D4"
+            }
+          },
+          "amount": {
+            "meta": {
+              "text": "Q8,245.00",
+              "textSize": 28,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#003865"
+            }
+          },
+          "options": {
+            "download": {
+              "icon": "http://icon.com",
+              "action": "download_quotation"
+            },
+            "share": {
+              "icon": "http://icon.com",
+              "action": "share_quotation"
+            }
+          }
+        },
+        "collection": [
+          [
+            {
+              "title": {
+                "meta": {
+                  "text": "Plazo",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "12 meses",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Cuota",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Q687.08",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            }
+          ],
+          [
+            {
+              "title": {
+                "meta": {
+                  "text": "Tasa de interés",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "18%",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Tipo de cuota",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Nivelada",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "type": "checkboxWithLink",
+        "id": "checkboxWithLink",
+        "required": true,
+        "titleWithLink": {
+          "meta": {
+            "text": "¡Estoy de acuerdo!",
+            "textSize": 14,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#000000",
+            "linkText": ""
+          }
+        },
+        "selectedValue": true,
+        "defaultValue": false,
+        "isEnabled": true
+      }
+    ],
+    "footer": []
+  }
+}

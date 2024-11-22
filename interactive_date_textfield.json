@@ -1,0 +1,61 @@
+{
+  "type": "interactiveDateTextField",
+  "id": "interactiveDateTextField",
+  "required": true,
+  "isEnable": true,
+  "title": {
+    "meta": {
+      "text": "Fecha de vencimiento de DPI",
+      "textSize": 14,
+      "weightFont": "regular",
+      "textColor": "#003865"
+    }
+  },
+  "textField": {
+    "meta": {
+      "text": "",
+      "textSize": 16,
+      "weightFont": "regular",
+      "textColor": "#003865"
+    },
+    "placeHolder": {
+      "meta": {
+        "text": "ej. 12/05/2020",
+        "textSize": 16,
+        "weightFont": "regular",
+        "textColor": "#829DB4"
+      }
+    }
+  },
+  "iconRight": {
+    "meta": {
+      "type": "url",
+      "icon": "http://icon.com"
+    }
+  },
+  "errorLabel": {
+    "meta": {
+      "textSize": 14,
+      "weightFont": "regular",
+      "textColor": "#F13852"
+    }
+  },
+  "singleValidation": [
+    {
+      "id": "errorRegex",
+      "text": "Revisa tu información en este campo.",
+      "regexInline": "[a-zA-Z0-9_-]"
+    },
+    {
+      "id": "emptyError",
+      "text": "No olvides llenar este campo."
+    }
+  ],
+  "minDate": 1704138654,
+  "maxDate": 1706298654,
+  "dateFormat": "dd/MM/yyyy",
+  "minLenght": 0,
+  "maxLenght": 10,
+  "keyboardType": "date",
+  "regex": "[a-zA-Z0-9_-]"
+}

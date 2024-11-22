@@ -1,0 +1,363 @@
+{
+  "appInfo": {},
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "type": "progressbar",
+        "id": "progressbar",
+        "required": true,
+        "progressbar": {
+          "meta": {
+            "step": 15,
+            "totalSteps": 100,
+            "barColor": "#00C1D4",
+            "barBackgroundColor": "#a1edf5"
+          },
+          "title": {
+            "meta": {
+              "text": "Cotiza tu crédito",
+              "textSize": 24,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#003865"
+            }
+          }
+        }
+      },
+      {
+        "type": "calculator",
+        "id": "calculator",
+        "required": true,
+        "isEnable": true,
+        "sliderAmount": {
+          "meta": {
+            "minTrackTint": "#00C1D4",
+            "maxTrackTint": "#D4F2F5",
+            "initialAmount": 2000,
+            "maxAmount": 50000,
+            "minAmount": 0,
+            "range": 1000
+          },
+          "isEditable": false,
+          "title": {
+            "meta": {
+              "text": "Monto a cotizar",
+              "textSize": 14,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#2D8C9E"
+            }
+          },
+          "quotationAmount": {
+            "meta": {
+              "text": "",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#000000"
+            },
+            "placeHolder": {
+              "meta": {
+                "text": "Ingresos totales mensuales",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "currency": {
+              "meta": {
+                "text": "GTQ",
+                "textSize": 8,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "minAmountTitle": {
+            "meta": {
+              "text": "Min GTQ 5,000.00",
+              "textSize": 12,
+              "weightFont": "normal",
+              "textAlignment": "center",
+              "textColor": "#373939"
+            }
+          },
+          "maxAmountTitle": {
+            "meta": {
+              "text": "Máx GTQ 500,000.00",
+              "textSize": 12,
+              "weightFont": "normal",
+              "textAlignment": "center",
+              "textColor": "#373939"
+            }
+          }
+        },
+        "title": {
+          "meta": {
+            "text": "Pagando en meses",
+            "textSize": 18,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#000000"
+          }
+        },
+        "listPicker": {
+          "parentId": "parentId",
+          "childId": "childId",
+          "url": "/api/address/v3/departments",
+          "title": {
+            "meta": {
+              "text": "¿En cuántos meses deseas pagarlo?",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "items": [
+            {
+              "id": 1,
+              "value": "12 meses"
+            },
+            {
+              "id": 2,
+              "value": "18 meses"
+            },
+            {
+              "id": 3,
+              "value": "24 meses"
+            },
+            {
+              "id": 4,
+              "value": "36 meses"
+            },
+            {
+              "id": 5,
+              "value": "42 meses"
+            },
+            {
+              "id": 6,
+              "value": "48 meses"
+            },
+            {
+              "id": 7,
+              "value": "54 meses"
+            },
+            {
+              "id": 8,
+              "value": "60 meses"
+            }
+          ],
+          "searchText": {
+            "meta": {
+              "text": "Buscar departamento",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            },
+            "placeHolder": {
+              "meta": {
+                "text": "Presiona para buscar",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "selectedValue": "Guatemala"
+        },
+        "collection": [
+          [
+            {
+              "title": {
+                "meta": {
+                  "text": "Cuota",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "GTQ 4,166,66",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Interés mensual",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "18%",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            }
+          ],
+          [
+            {
+              "title": {
+                "meta": {
+                  "text": "Tipo de cuota",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#373939"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Nivelada",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Primer pago",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "16 de Agosto",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              }
+            }
+          ]
+        ],
+        "bottomSheet": {
+          "title": {
+            "meta": {
+              "text": "Detalles importantes",
+              "textSize": 16,
+              "weightFont": "bold",
+              "textAlignment": "left",
+              "textColor": "#003865"
+            }
+          },
+          "content": [
+            {
+              "title": {
+                "meta": {
+                  "text": "¡Recuerda!",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Este cálculo no es final, es una proyección aproximada de tus pagos. Ten presente que el resultado de tu solicitud, dependerá del monto solicitado y tu capacidad de pagos.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Tipos de cuotas:",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Cuota nivelada",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#20626F"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Consiste en que el valor de tu cuota mensual será la misma cada mes durante toda la vigencia de tu préstamo. Es decir en cada cuota pagas una parte de intereses y abonas una parte al capital",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Cuota sobre saldos",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#20626F"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Consiste en que el valor de tu cuota mensual será diferente todos los meses durante toda la vigencia de tu préstamo. Los intereses por pagar varían en cada cuota, por esa razón las cuotas iniciales son mayores y la cuota mensual es decreciente",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            }
+          ]
+        },
+        "selectedValues": [
+          "GTQ 500.000,00",
+          "60 meses"
+        ]
+      },
+      {
+        "type": "button",
+        "id": "button",
+        "title": {
+          "meta": {
+            "text": "¡Lo quiero!",
+            "textSize": 16,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#ffffff"
+          }
+        },
+        "enableBackgroundColor": "#0000ff",
+        "disableBackgroundColor": "#003865"
+      }
+    ],
+    "footer": []
+  }
+}

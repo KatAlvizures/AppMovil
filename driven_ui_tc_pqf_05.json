@@ -1,0 +1,427 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "b54438f5ed05eb4faa2cd6e3bf02bc493b31f0b6e88a686af0eed02aa8fc0478409359b064d34ec8d85274412332d925554e013288d65e8a3ead21f6f708be3357a10681e889caec60417c93f001bc838a79f47b80e7d9937e9f8171b2bac2ee6573d25e649182966b6105b8cef3e11c5c993580e5d3cbd418c83f6759225f6b2539d644f2d26c77dc7664dc9c95d7a36ad53002c8916211f822862b91ed89fd8dc9188fb96a611c56b629b4d192bf686fa79d26a8fbbbd48d34346b6cf1e2a3"
+  },
+  "responseContent": {
+    "data": {
+      "id": "intro",
+      "title": "Solicita tu Tarjeta de Crédito",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 10
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "¡Tu tarjeta está autorizada!",
+              "textAlignment": "center",
+              "textColor": "#00325B",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Solo debes finalizar la solicitud",
+              "textAlignment": "center",
+              "textColor": "#4F5151",
+              "textSize": 16,
+              "weightFont": "regular"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 20
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "creditCardDetails",
+          "id": "biCreditCardInfo",
+          "cardImage": "https://media.corporacionbi.com/Imagenes/PAT/niclasicacreditovisafront.png",
+          "cardDetails": [
+            [
+              {
+                "title": {
+                  "meta": {
+                    "text": "Categoría",
+                    "textSize": 12,
+                    "weightFont": "normal",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "Visa Clásica",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "right",
+                    "textColor": "#003865"
+                  }
+                }
+              }
+            ],
+            [
+              {
+                "title": {
+                  "meta": {
+                    "text": "Límite \npreautorizado:",
+                    "textSize": 12,
+                    "weightFont": "normal",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "GTQ 5,400.00\n US$ 699.99",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "right",
+                    "textColor": "#003865"
+                  }
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 10
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "labelListCard",
+          "type": "labelListCard",
+          "componentCard": {
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Beneficios de tu tarjeta",
+                "textSize": 14,
+                "weightFont": "regular",
+                "textColor": "#003865"
+              }
+            },
+            "subtitleCollapsed": {
+              "meta": {
+                "text": "Presiona y conócelos",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#4F5151"
+              }
+            },
+            "subtitleExpandable": {
+              "meta": {
+                "text": "Disfruta de los beneficios",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#4F5151"
+              }
+            },
+            "labelList": {
+              "id": "labelListRequirement",
+              "type": "labelList",
+              "labelList": {
+                "symbolColor": "#000000",
+                "symbol": "•",
+                "labels": [
+                  {
+                    "id": "label",
+                    "type": "label",
+                    "label": {
+                      "meta": {
+                        "text": "Acumulas Bi Puntos por compras canjeables en establecimientos afiliados",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  },
+                  {
+                    "label": {
+                      "meta": {
+                        "text": "Extrafinanciamiento fácil y rápido",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  },
+                  {
+                    "id": "label",
+                    "type": "label",
+                    "label": {
+                      "meta": {
+                        "text": "Uso internacional",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  },
+                  {
+                    "id": "label",
+                    "type": "label",
+                    "label": {
+                      "meta": {
+                        "text": "Retiro de efectivo en cajeros automáticos",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  },
+                  {
+                    "id": "label",
+                    "type": "label",
+                    "label": {
+                      "meta": {
+                        "text": "Plan de financiamiento en cuotas sin intereses con Tarjetas de Crédito Visa y Mastercard",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  },
+                  {
+                    "id": "label",
+                    "type": "label",
+                    "label": {
+                      "meta": {
+                        "text": "Seguro de Cero Riesgo te protege de transacciones no reconocidas realizadas con tu tarjeta BI",
+                        "textSize": 12,
+                        "weightFont": "regular",
+                        "textAlignment": "left",
+                        "textColor": "#6F7171"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 10
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "checkboxWithLink",
+          "id": "termsAndConditionsCheckboxWithLink",
+          "required": true,
+          "titleWithLink": {
+            "meta": {
+              "text": "He leído y acepto los términos y condiciones de mi solicitud de tarjeta de crédito.",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textAlignment": "center",
+              "textColor": "#222222",
+              "linkText": "términos y condiciones",
+              "linkColor": "#1D9AFF",
+              "url": "http://"
+            }
+          },
+          "bottomSheet": {
+            "title": {
+              "meta": {
+                "text": "Términos y condiciones",
+                "textSize": 16,
+                "weightFont": "bold",
+                "textAlignment": "left",
+                "textColor": "#003865"
+              }
+            },
+            "content": [
+              {
+                "description": {
+                  "meta": {
+                    "text": "Autorizo (amos) a los representantes legales, gerentes, mandatarios, funcionarios y/o empleados de BANCO INDUSTRIAL, S.A., y las demás empresas que forman parte del Grupo Financiero Corporación BI, para:",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              },
+              {
+                "title": {
+                  "meta": {
+                    "text": "1. Veracidad",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "Que puedan corroborar la veracidad de toda la información, por cualquier medio legal, incluyendo la lectura del dispositivo incorporado en mi (nuestro) documento personal de identificación, autorización escrita que entrego (amos) en este acto, reconociéndome (nos) responsable (s) civil o penalmente en caso que se llegara a constatar que la información relacionada es falsa parcial o totalmente.",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              },
+              {
+                "title": {
+                  "meta": {
+                    "text": "2. Información recopilada",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "A que la información recopilada o proporcionada por entidades públicas o privadas y la generada de relaciones contractuales, crediticias o comerciales, sea reportada a centrales de riesgo o burós de crédito para ser tratada, almacenada o transferida.",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              },
+              {
+                "title": {
+                  "meta": {
+                    "text": "3. Información sobre mi persona",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "Autorizo (amos) expresamente a las centrales de riesgo y burós de crédito a recopilar, suministrar y comercializar información sobre mi persona.",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              },
+              {
+                "title": {
+                  "meta": {
+                    "text": "4. Domicilio",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "Declaro(amos) que mi domicilio y lugar para recibir notificaciones es el que consigno(amos) oportunamente en los medios electrónicos aplicables, en el espacio correspondiente, y que además es una dirección verídica, existente y fidedigna.",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              },
+              {
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "left",
+                    "textColor": "#003865"
+                  }
+                },
+                "description": {
+                  "meta": {
+                    "text": "Por su parte, BANCO INDUSTRIAL, S.A., se obliga a no hacer pública a terceros, toda aquella información que sea del tipo a que se refiere el artículo cincuenta y ocho (58) y al artículo sesenta y tres (63) de la Ley de Bancos y Grupos Financieros (Decreto 19-2002) de la República de Guatemala.",
+                    "textSize": 16,
+                    "weightFont": "normal",
+                    "textAlignment": "right",
+                    "textColor": "#000000"
+                  }
+                }
+              }
+            ]
+          },
+          "selectedValue": true,
+          "defaultValue": false,
+          "isEnabled": true
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/existent_clients/v1/page/personalization_card",
+            "type": "present"
+          },
+          "alwaysActive": true,
+          "borderColor": "#003865",
+          "disableBackgroundColor": "#829DB4",
+          "enableBackgroundColor": "#F3F3F3",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Personalizar",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        },
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/continue",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#9EA2A2",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Siguiente",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

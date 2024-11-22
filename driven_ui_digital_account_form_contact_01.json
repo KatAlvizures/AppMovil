@@ -1,0 +1,850 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "36168ee4e9620d4c4130a995ccf43c20695afb5ad91d44b875e9591351829cd0cb92ea88af26d82f804b605c9915e6af43fba2629073f4a7b57730dbe7fed9a827ba0a42144c0d3f76e8b2e39cb765c237d76c1671d68da528c8c83d7bda36df24374ed7d168b1586f1b50c04293c1233abbbea1671ac8dd797c4ccddce63ff77f2bba05f613c3f6034ce534a52cf447c6729784409a6dbc15ddf54eef5418e3d26f4b2ed663fb700fbf9f5a3b769dd633064eb6a1c728cce239eab3fb595107"
+  },
+  "responseContent": {
+    "data": {
+      "id": "contacts_data",
+      "title": "Datos de contacto",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 24
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "¿Dónde vives?",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 10
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Necesitamos conocer tu dirección",
+              "textAlignment": "center",
+              "textColor": "#4F5151",
+              "textSize": 16,
+              "weightFont": "regular"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 24
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "listPicker",
+          "id": "listPicker1",
+          "required": true,
+          "isEnable": true,
+          "customBorderColor": "#000000",
+          "listPicker": {
+            "parentId": "parentId",
+            "childId": "childId",
+            "title": {
+              "meta": {
+                "text": "Selecciona tu departamento",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              }
+            },
+            "items": [
+              {
+                "id": 1,
+                "value": "Guatemala"
+              },
+              {
+                "id": 2,
+                "value": "Escuintla"
+              },
+              {
+                "id": 3,
+                "value": "San Marcos"
+              }
+            ],
+            "searchText": {
+              "meta": {
+                "text": "Buscar departamento",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              },
+              "placeHolder": {
+                "meta": {
+                  "text": "Presiona para buscar",
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#c6c6c6"
+                }
+              }
+            },
+            "selectedValue": null
+          },
+          "title": {
+            "meta": {
+              "text": "Selecciona tu departamento",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "subTitle": {
+            "meta": {
+              "text": "Presiona para continuar",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "selectedText": {
+            "meta": {
+              "text": "Presiona para cambiar tu departamento",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "errorText": {
+            "meta": {
+              "text": "No olvides seleccionar una opción",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "leftIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#1EC771",
+              "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/Capa_1.png?alt=media&token=32070a86-837c-4c8d-afc3-f5ecdf05c33a",
+              "inactiveIcon": "",
+              "activeIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/deparment_active.png?alt=media&token=a11b0c38-2aaf-4c80-b059-989f7e06d0d1"
+            }
+          },
+          "rightIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#BBF7DC",
+              "defaultIcon": "",
+              "inactiveIcon": "",
+              "activeIcon": ""
+            }
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 14
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "listPicker",
+          "id": "listPicker2",
+          "required": true,
+          "isEnable": true,
+          "customBorderColor": "#000000",
+          "listPicker": {
+            "parentId": "parentId",
+            "childId": "childId",
+            "title": {
+              "meta": {
+                "text": "Selecciona tu municipio",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              }
+            },
+            "items": [
+              {
+                "id": 1,
+                "value": "Guatemala"
+              },
+              {
+                "id": 2,
+                "value": "Escuintla"
+              },
+              {
+                "id": 3,
+                "value": "San Marcos"
+              }
+            ],
+            "searchText": {
+              "meta": {
+                "text": "Buscar municipio",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              },
+              "placeHolder": {
+                "meta": {
+                  "text": "Presiona para buscar",
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#c6c6c6"
+                }
+              }
+            },
+            "selectedValue": null
+          },
+          "title": {
+            "meta": {
+              "text": "Selecciona tu municipio",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "subTitle": {
+            "meta": {
+              "text": "Presiona para continuar",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "selectedText": {
+            "meta": {
+              "text": "Presiona para cambiar tu municipio",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "errorText": {
+            "meta": {
+              "text": "No olvides seleccionar una opción",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "leftIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#1EC771",
+              "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-default.png?alt=media&token=78d1999f-11a5-4c22-b6f1-2da7b79406d6",
+              "inactiveIcon": "",
+              "activeIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-active.png?alt=media&token=c3e1917b-4cfe-4c26-af15-57e700b949eb"
+            }
+          },
+          "rightIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#BBF7DC",
+              "defaultIcon": "",
+              "inactiveIcon": "",
+              "activeIcon": ""
+            }
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 14
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "interactiveTextField",
+          "id": "interactiveTextField1",
+          "required": true,
+          "isEnable": true,
+          "autocapitalizationType": "none",
+          "customBorderColor": "#000000",
+          "title": {
+            "meta": {
+              "text": "Zona",
+              "textSize": 10,
+              "weightFont": "400",
+              "textColor": "#003865"
+            }
+          },
+          "textField": {
+            "meta": {
+              "text": "",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#000000"
+            },
+            "placeHolder": {
+              "meta": {
+                "text": "Ej. 10",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "errorLabel": {
+            "meta": {
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#CB2533"
+            }
+          },
+          "singleValidation": [
+            {
+              "id": "errorRegex",
+              "text": "Revisa tu información en este campo.",
+              "regexInline": "^[0-9]+$"
+            },
+            {
+              "id": "emptyError",
+              "text": "No olvides llenar este campo."
+            }
+          ],
+          "multipleValidation": [
+            {
+              "id": "errorLongitud",
+              "text": "Más de 2 caracteres"
+            },
+            {
+              "id": "errorLongitud",
+              "text": "Menos de 2 caracteres"
+            }
+          ],
+          "minLength": 1,
+          "maxLength": 2,
+          "keyboardType": "INT"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 14
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "addressListPicker",
+          "id": "streetPicker",
+          "required": true,
+          "isEnable": true,
+          "customBorderColor": "#000000",
+          "isVisible": true,
+          "listPicker": {
+            "parentId": "",
+            "childId": "testPicker",
+            "title": {
+              "meta": {
+                "text": "Selecciona tu opcion",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              }
+            },
+            "items": [
+              {
+                "id": 1,
+                "value": "Calle"
+              },
+              {
+                "id": 2,
+                "value": "Avenida"
+              },
+              {
+                "id": 3,
+                "value": "Via"
+              },
+              {
+                "id": 4,
+                "value": "Diagonal"
+              }
+            ],
+            "selectedValue": {
+              "id": 3,
+              "value": "Via"
+            }
+          },
+          "contentFields": [
+            {
+              "interactiveTextField": {
+                "id": "interactiveTextField1",
+                "required": true,
+                "isEnable": true,
+                "parentId": "3",
+                "title": {
+                  "meta": {
+                    "text": "Número de calle",
+                    "textSize": 10,
+                    "weightFont": "400",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "Test via",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 15",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#CB2533"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": "^[0-9]+$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 1,
+                "maxLength": 20,
+                "keyboardType": "ALPHA"
+              }
+            }
+          ],
+          "title": {
+            "meta": {
+              "text": "Selecciona tu tipo de direccion",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "subTitle": {
+            "meta": {
+              "text": "Presiona para elejir entre calle, via, etc.",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "selectedText": {
+            "meta": {
+              "text": "Presiona para cambiar tu tipo de direccion",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "errorText": {
+            "meta": {
+              "text": "No olvides seleccionar una opción",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "leftIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#1EC771",
+              "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-default.png?alt=media&token=78d1999f-11a5-4c22-b6f1-2da7b79406d6",
+              "inactiveIcon": "",
+              "activeIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-active.png?alt=media&token=c3e1917b-4cfe-4c26-af15-57e700b949eb"
+            }
+          },
+          "rightIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#BBF7DC",
+              "defaultIcon": "",
+              "inactiveIcon": "",
+              "activeIcon": ""
+            }
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 14
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "addressListPicker",
+          "id": "testPicker",
+          "required": true,
+          "isEnable": true,
+          "customBorderColor": "#000000",
+          "isVisible": true,
+          "listPicker": {
+            "parentId": "streetPicker",
+            "childId": "listPicker1",
+            "title": {
+              "meta": {
+                "text": "Selecciona tu opcion",
+                "textSize": 10,
+                "weightFont": "bold",
+                "textAlignment": "center",
+                "textColor": "#000000"
+              }
+            },
+            "items": [
+              {
+                "id": 1,
+                "value": "Colonia"
+              },
+              {
+                "id": 2,
+                "value": "Condominio"
+              },
+              {
+                "id": 3,
+                "value": "Residencial"
+              },
+              {
+                "id": 4,
+                "value": "Edificio"
+              },
+              {
+                "id": 5,
+                "value": "Caserío"
+              },
+              {
+                "id": 6,
+                "value": "Aldea"
+              },
+              {
+                "id": 7,
+                "value": "Paraje"
+              },
+              {
+                "id": 8,
+                "value": "Otro"
+              }
+            ],
+            "otherField": {
+              "interactiveTextField": {
+                "id": "interactiveTextField1",
+                "required": true,
+                "isEnable": true,
+                "title": {
+                  "meta": {
+                    "text": "Número de calle",
+                    "textSize": 10,
+                    "weightFont": "400",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "Otro lugar",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 15",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#CB2533"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": "^[0-9]+$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 1,
+                "maxLength": 20,
+                "keyboardType": "ALPHA"
+              }
+            },
+            "selectedValue": {
+              "id": 1,
+              "value": "Colonia"
+            }
+          },
+          "contentFields": [
+            {
+              "interactiveTextField": {
+                "id": "interactiveTextField1",
+                "required": true,
+                "isEnable": true,
+                "parentId": "1",
+                "title": {
+                  "meta": {
+                    "text": "Nombre de tu residencial",
+                    "textSize": 10,
+                    "weightFont": "400",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "Una colonia",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Villa Beatriz",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#CB2533"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": "^[0-9]+$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 1,
+                "maxLength": 20,
+                "keyboardType": "ALPHA"
+              }
+            },
+            {
+              "interactiveTextField": {
+                "id": "interactiveTextField2",
+                "required": true,
+                "isEnable": true,
+                "parentId": "1",
+                "title": {
+                  "meta": {
+                    "text": "Indicaciones adicionales",
+                    "textSize": 10,
+                    "weightFont": "400",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "Gire a la izquierda",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. A una cuadra del MP",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#CB2533"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": "^[0-9]+$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 1,
+                "maxLength": 20,
+                "keyboardType": "ALPHA"
+              }
+            }
+          ],
+          "title": {
+            "meta": {
+              "text": "Selecciona tu tipo de direccion",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "subTitle": {
+            "meta": {
+              "text": "Presiona para elejir entre calle, via, etc.",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "selectedText": {
+            "meta": {
+              "text": "Presiona para cambiar tu tipo de direccion",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "errorText": {
+            "meta": {
+              "text": "No olvides seleccionar una opción",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            }
+          },
+          "leftIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#1EC771",
+              "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-default.png?alt=media&token=78d1999f-11a5-4c22-b6f1-2da7b79406d6",
+              "inactiveIcon": "",
+              "activeIcon": "https://firebasestorage.googleapis.com/v0/b/bi-en-linea-dev.appspot.com/o/location-active.png?alt=media&token=c3e1917b-4cfe-4c26-af15-57e700b949eb"
+            }
+          },
+          "rightIcon": {
+            "icon": {
+              "defaultTintColor": "#BBF7DC",
+              "inactiveTintColor": "#BBF7DC",
+              "activeTintColor": "#BBF7DC",
+              "defaultIcon": "",
+              "inactiveIcon": "",
+              "activeIcon": ""
+            }
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 14
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "checkbox",
+          "id": "checkbox",
+          "required": true,
+          "title": {
+            "meta": {
+              "text": "Deseo visitar una Agencia de Banco Industrial para recibir mi tarjeta de débito",
+              "textSize": 10,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000",
+              "secondaryTextColor": "#000000",
+              "secondaryWeightFont": "bold",
+              "secondaryText": ["Agencia de Banco Industrial", "tarjeta de débito"]
+            }
+          },
+          "selectedValue": true,
+          "defaultValue": false,
+          "isEnabled": true
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/process_political_association",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#829DB4",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Siguiente",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

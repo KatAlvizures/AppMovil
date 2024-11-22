@@ -1,0 +1,27 @@
+{
+  "type": "textField",
+  "id": "textField",
+  "required": true,
+  "isEnable":true,
+  "textField": {
+    "meta": {
+      "text": "",
+      "textSize": 12,
+      "weightFont": "regular",
+      "textColor": "#000000"
+    },
+    "placeHolder": {
+      "meta": {
+        "text": "ej. 96720008090",
+        "textSize": 12,
+        "weightFont": "regular",
+        "textColor": "#c6c6c6"
+      }
+    }
+  },
+  "minLenght":5,
+  "maxLenght":15,
+  "keyboardType":"numeric",
+  "regex":"^[0-9]*$",
+  "regexInline":"^[0-9]*$"
+}

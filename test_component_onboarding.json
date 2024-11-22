@@ -1,0 +1,213 @@
+{
+  "appInfo": {},
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "!Hola",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 20,
+            "weightFont": "normal"
+          }
+        },
+        "required": true,
+        "type": "label"
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Te damos la bienvenida",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 24,
+            "weightFont": "bold"
+          }
+        },
+        "required": true,
+        "type": "label"
+      },
+      {
+        "id": "lottie",
+        "type": "lottieAnimation",
+        "required": true,
+        "lottieAnimation": {
+          "meta": {
+            "animationURL": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/animaciones%2FQueBuenoVerte%20DeNuevo%20306x306.json?alt=media",
+            "loopMode": true,
+            "animationSpeed": 0.5,
+            "width": 300,
+            "height": 400
+          }
+        }
+      },
+      {
+        "type": "checkboxWithLink",
+        "id": "checkboxWithLink",
+        "required": true,
+        "titleWithLink": {
+          "meta": {
+            "text": "He leído y acepto los términos y condiciones de mi solicitud de crédito y firma digital.",
+            "textSize": 14,
+            "weightFont": "normal",
+            "textAlignment": "left",
+            "textColor": "#003865",
+            "linkText": "términos y condiciones",
+            "url": "https://www.corporacionbi.com/gt/bancoindustrial/terminos-y-condiciones-solicitudes-de-credito-bel-app/"
+          }
+        },
+        "bottomSheet": {
+          "title": {
+            "meta": {
+              "text": "Términos y condiciones",
+              "textSize": 20,
+              "weightFont": "bold",
+              "textAlignment": "left",
+              "textColor": "#003865"
+            }
+          },
+          "content": [
+            {
+              "description": {
+                "meta": {
+                  "text": "Autorizo (amos) a los representantes legales, gerentes, mandatarios, funcionarios y/o empleados de BANCO INDUSTRIAL, S.A., y las demás empresas que forman parte del Grupo Financiero Corporación BI, para:",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "1. Veracidad",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Que puedan corroborar la veracidad de toda la información, por cualquier medio legal, incluyendo la lectura del dispositivo incorporado en mi (nuestro) documento personal de identificación, autorización escrita que entrego (amos) en este acto, reconociéndome (nos) responsable (s) civil o penalmente en caso que se llegara a constatar que la información relacionada es falsa parcial o totalmente.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "2.Información recopilada",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "A que la información recopilada o proporcionada por entidades públicas o privadas y la generada de relaciones contractuales, crediticias o comerciales, sea reportada a centrales de riesgo o burós de crédito para ser tratada, almacenada o transferida.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "3. Información sobre mi persona.",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Autorizo (amos) expresamente a las centrales de riesgo y burós de crédito a recopilar, suministrar y comercializar información sobre mi persona.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "4. Domicilio.",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Declaro(amos) que mi domicilio y lugar para recibir notificaciones es el que consigno(amos) oportunamente en los medios electrónicos aplicables, en el espacio correspondiente, y que además es una dirección verídica, existente y fidedigna.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "description": {
+                "meta": {
+                  "text": "Por su parte, BANCO INDUSTRIAL, S.A., se obliga a no hacer pública a terceros, toda aquella información que sea del tipo a que se refiere el artículo cincuenta y ocho (58) y al artículo sesenta y tres (63) de la Ley de Bancos y Grupos Financieros (Decreto 19-2002) de la República de Guatemala.",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#000000"
+                }
+              }
+            },
+            {
+              "title": {
+                "meta": {
+                  "text": "Ver más \n",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "underline": true,
+                  "url": "https://www.corporacionbi.com/gt/bancoindustrial/terminos-y-condiciones-solicitudes-de-credito-bel-app/"
+                }
+              }
+            }
+          ]
+        },
+        "selectedValue": true,
+        "defaultValue": false,
+        "isEnabled": true
+      },
+      {
+        "type": "button",
+        "id": "button",
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textSize": 16,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#ffffff"
+          }
+        },
+        "enableBackgroundColor": "#0000ff",
+        "disableBackgroundColor": "#003865"
+      }
+    ],
+    "footer": []
+  }
+}

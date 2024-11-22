@@ -1,0 +1,106 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "b54438f5ed05eb4faa2cd6e3bf02bc493b31f0b6e88a686af0eed02aa8fc0478409359b064d34ec8d85274412332d925554e013288d65e8a3ead21f6f708be3357a10681e889caec60417c93f001bc838a79f47b80e7d9937e9f8171b2bac2ee6573d25e649182966b6105b8cef3e11c5c993580e5d3cbd418c83f6759225f6b2539d644f2d26c77dc7664dc9c95d7a36ad53002c8916211f822862b91ed89fd8dc9188fb96a611c56b629b4d192bf686fa79d26a8fbbbd48d34346b6cf1e2a3"
+  },
+  "responseContent": {
+    "data": {
+      "id": "intro",
+      "title": "Solicita tu Tarjeta de Crédito",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 16
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "interactiveFlowSelector",
+          "required": true,
+          "type": "interactiveFlowSelector",
+          "interactiveSelector": {
+            "hasSingleSelection": true,
+            "items": [
+              {
+                "id": "employmentRelation",
+                "icon": "https://media.corporacionbi.com/Imagenes/root/CreditCard/PQF6/trabajoenuna Empresa.png",
+                "label": {
+                  "meta": {
+                    "text": "Relación de dependencia",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000",
+                    "secondaryTextColor": "#000000",
+                    "secondaryText": "demora de 3 a 5 minutos."
+                  }
+                },
+                "isSelected": true,
+                "isEnabled": true
+              },
+              {
+                "id": "ownBusiness",
+                "icon": "https://media.corporacionbi.com/Imagenes/root/CreditCard/PQF6/negocioRegistrado.png",
+                "label": {
+                  "meta": {
+                    "text": "Negocio propio",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000",
+                    "secondaryTextColor": "#000000",
+                    "secondaryText": "demora de 3 a 5 minutos."
+                  }
+                },
+                "isSelected": false,
+                "isEnabled": true
+              },
+              {
+                "id": "otherSources",
+                "icon": "https://media.corporacionbi.com/Imagenes/root/CreditCard/PQF6/otrasFuentes.png",
+                "label": {
+                  "meta": {
+                    "text": "Otras fuentes",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000",
+                    "secondaryTextColor": "#000000",
+                    "secondaryText": "demora de 3 a 5 minutos."
+                  }
+                },
+                "isSelected": false,
+                "isEnabled": true
+              }
+            ]
+          }
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/political_association",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#829DB4",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Siguiente",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

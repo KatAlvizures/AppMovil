@@ -1,0 +1,221 @@
+{
+  "type": "page",
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "id": "interactiveTextFieldSelector",
+        "type": "interactiveTextFieldSelector",
+        "interactiveSelector": {
+          "hasSingleSelection": false,
+          "items": [
+            {
+              "id": "employmentRelation",
+              "icon": "https://cdn-icons-png.freepik.com/256/616/616168.png",
+              "label": {
+                "meta": {
+                  "text": "Relación de dependencia",
+                  "textSize": 10,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#000000",
+                  "secondaryTextColor": "#000000",
+                  "secondaryText": "demora de 3 a 5 minutos."
+                }
+              },
+              "isSelected": true,
+              "isEnabled": false
+            },
+            {
+              "id": "ownBusiness",
+              "icon": "https://cdn-icons-png.freepik.com/256/4300/4300059.png",
+              "label": {
+                "meta": {
+                  "text": "Negocio propio",
+                  "textSize": 10,
+                  "weightFont": "bold",
+                  "textAlignment": "start",
+                  "textColor": "#000000",
+                  "secondaryTextColor": "#000000",
+                  "secondaryText": "demora de 3 a 5 minutos."
+                }
+              },
+              "isSelected": true,
+              "isEnabled": true,
+              "interactiveTextField": {
+                "id": "businessNameTextField",
+                "type": "interactiveTextField",
+                "required": true,
+                "isEnable": true,
+                "title": {
+                  "meta": {
+                    "text": "Negocio propio",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "Nombre comercial",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Nombre comercial",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "bottomSheet": {
+                  "title": {
+                    "meta": {
+                      "text": "Negocio propio",
+                      "textSize": 16,
+                      "weightFont": "bold",
+                      "textAlignment": "left",
+                      "textColor": "#003865"
+                    }
+                  },
+                  "content": [
+                    {
+                      "description": {
+                        "meta": {
+                          "text": "Establecimiento comercial, que tiene como objetivo satisfacer las necesidades...",
+                          "textSize": 16,
+                          "weightFont": "normal",
+                          "textAlignment": "right",
+                          "textColor": "#003865"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": ".+"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 5,
+                "maxLength": 50,
+                "keyboardType": "alphanumeric",
+                "regex": "^.+$"
+              }
+            },
+            {
+              "id": "otherSources",
+              "icon": "https://cdn-icons-png.flaticon.com/256/88/88961.png",
+              "label": {
+                "meta": {
+                  "text": "Otras fuentes",
+                  "textSize": 10,
+                  "weightFont": "bold",
+                  "textAlignment": "start",
+                  "textColor": "#000000",
+                  "secondaryTextColor": "#000000",
+                  "secondaryText": "demora de 3 a 5 minutos."
+                }
+              },
+              "isSelected": false,
+              "isEnabled": true,
+              "interactiveTextField": {
+                "id": "otherSourcesTextField",
+                "type": "interactiveTextField",
+                "required": true,
+                "isEnable": true,
+                "title": {
+                  "meta": {
+                    "text": "Otras fuentes",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Renta, actividades profesionales, etc",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "bottomSheet": {
+                  "title": {
+                    "meta": {
+                      "text": "Otras fuentes",
+                      "textSize": 16,
+                      "weightFont": "bold",
+                      "textAlignment": "left",
+                      "textColor": "#003865"
+                    }
+                  },
+                  "content": [
+                    {
+                      "description": {
+                        "meta": {
+                          "text": "Cualquier fuente de ingreso o beneficio económico...",
+                          "textSize": 16,
+                          "weightFont": "normal",
+                          "textAlignment": "right",
+                          "textColor": "#003865"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline": ".+"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 5,
+                "maxLength": 50,
+                "keyboardType": "alphanumeric",
+                "regex": "^.+$"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "footer": []
+  }
+}

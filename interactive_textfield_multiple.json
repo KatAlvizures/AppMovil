@@ -1,0 +1,72 @@
+{
+  "type": "page",
+  "data": {
+    "header": [],
+    "body": [{
+      "type": "interactiveTextField",
+      "id": "textField",
+      "required": true,
+      "isEnable": true,
+      "title": {
+        "meta": {
+          "text": "Usuario Bi en Línea",
+          "textSize": 14,
+          "weightFont": "regular",
+          "textColor": "#003865"
+        }
+      },
+      "textField": {
+        "meta": {
+          "text": "",
+          "textSize": 16,
+          "weightFont": "regular",
+          "textColor": "#003865"
+        },
+        "placeHolder": {
+          "meta": {
+            "text": "ej. juanjo",
+            "textSize": 16,
+            "weightFont": "regular",
+            "textColor": "#829DB4"
+          }
+        }
+      },
+      "errorLabel": {
+        "meta": {
+          "textSize": 14,
+          "weightFont": "regular",
+          "textColor": "#F13852"
+        }
+      },
+      "singleValidation": [
+        {
+          "id": "emptyError",
+          "text": "No olvides llenar este campo.",
+          "regexInline": ".+"
+        }
+      ],
+      "multipleValidation": [
+        {
+          "id": "errorLongitudCinco",
+          "text": "Mínimo 5 caracteres",
+          "regexInline" : "^.{5,}$"
+        },
+        {
+          "id": "errorLongitudDiez",
+          "text": "Máximo 10 caracteres",
+          "regexInline" :"^.{0,10}$"
+        },
+        {
+          "id": "caracteresEspeciales",
+          "text": "Sin caracteres especiales",
+          "regexInline": "^[a-zA-ZÑñ\\s]+$"
+        }
+      ],
+      "minLength": 5,
+      "maxLength": 15,
+      "keyboardType": "alphanumeric",
+      "regex": "^.+$"
+    }],
+    "footer": []
+  }
+}

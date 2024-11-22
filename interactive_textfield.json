@@ -1,0 +1,196 @@
+{
+  "type": "page",
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "type": "interactiveTextField",
+        "id": "textField",
+        "required": true,
+        "isEnable": true,
+        "title": {
+          "meta": {
+            "text": "Usuario Bi en Línea",
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          }
+        },
+        "textField": {
+          "meta": {
+            "text": "",
+            "textSize": 16,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          },
+          "placeHolder": {
+            "meta": {
+              "text": "ej. juanjo",
+              "textSize": 16,
+              "weightFont": "regular",
+              "textColor": "#829DB4"
+            }
+          }
+        },
+        "errorLabel": {
+          "meta": {
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#F13852"
+          }
+        },
+        "singleValidation": [
+          {
+            "id": "emptyError",
+            "text": "No olvides llenar este campo.",
+            "regexInline": ".+"
+          }
+        ],
+        "minLength": 5,
+        "maxLength": 15,
+        "keyboardType": "alphanumeric",
+        "regex": "^.+$"
+      },
+      {
+        "type": "multipleCurrencyInputs",
+        "id": "multipleCurrencyInputs",
+        "title": {
+          "meta": {
+            "text": "Ingresos totales mensuales",
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          }
+        },
+        "listPicker": {
+          "searchText": {
+            "meta": {
+              "text": "Selecciona tu moneda",
+              "textSize": 12,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#003865"
+            },
+            "placeHolder": {
+              "meta": {
+                "text": "00.00",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#003865"
+              }
+            }
+          },
+            "items": [
+              {
+                "id": 1,
+                "value": "GTQ"
+              },
+              {
+                "id": 2,
+                "value": "USD"
+              }
+            ],
+          "title": {
+            "meta": {
+              "text": "Selecciona la moneda que deseas",
+              "textSize": 14,
+              "weightFont": "bold",
+              "textColor": "#003865"
+            }
+          }
+        },
+        "bottomSheet": {
+          "title": {
+            "meta": {
+              "text": "Ingresos totales mensuales",
+              "textSize": 16,
+              "weightFont": "bold",
+              "textAlignment": "left",
+              "textColor": "#003865"
+            }
+          },
+          "content": [
+            {
+              "title": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "bold",
+                  "textAlignment": "left",
+                  "textColor": "#003865"
+                }
+              },
+              "description": {
+                "meta": {
+                  "text": "Son todos los pagos mensuales que recibes...",
+                  "textSize": 16,
+                  "weightFont": "normal",
+                  "textAlignment": "right",
+                  "textColor": "#003865"
+                }
+              }
+            }
+          ]
+        },
+        "textField": {
+          "meta": {
+            "text": "",
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          },
+          "placeHolder": {
+            "meta": {
+              "text": "00.00",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#829DB4"
+            }
+          },
+          "value": "",
+          "minLength": 1,
+          "maxLength": 9,
+          "keyboardType": "decimalPad",
+          "regex": "^[0-9]+(,[0-9]+)?$",
+          "regexInline": "^[0-9]+(,[0-9]+)?$"
+        },
+        "errorLabel": {
+          "meta": {
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#F13852"
+          }
+        },
+        "validationErrors": [
+          {
+            "id": "errorRegex",
+            "text": "Revisa tu información en este campo.",
+            "regexInline": "3000"
+          },
+          {
+            "id": "emptyError",
+            "text": "No olvides llenar este campo."
+          }
+        ],
+        "currencyInputsValues": [
+          {
+            "amountValue": "8000",
+            "currencyValue": "GTQ"
+          }
+        ],
+        "addButton": {
+          "title": {
+            "meta": {
+              "text": "+ Añadir ingreso",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          }
+        },
+        "limitComponent": 3
+      }
+    ],
+    "footer": []
+  }
+}

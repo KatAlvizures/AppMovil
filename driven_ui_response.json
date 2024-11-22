@@ -1,0 +1,2452 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "e1fe3c7e4942d1941cafd2d266718a55456246867c47a89c224265f95aa8bf48c8fa5bab5b4a687201980d2c106fe718295f0fc4f3991911f79bc3c91c1328f8857b16b4f34b94cb7265cb1b422766ad73ad1c093c34d96ceb9b826f2d88ea7a3839e99a00e8fd40b6c40011a23cdd51c91be9e452e8c2c0b6d4b21a92b9f92e1e9d2ed45a8b7ba759fd376fa5a04f03ca5adeb245a3d27cab6df0363ed0908f326662706b4144e0900fedd18f79678228a40fe03b5bdfdf0b6b75ca54cc5c96"
+  },
+  "responseContent": {
+    "data": {
+      "id": "complete_your_data",
+      "title": "Solicita tu crédito",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 24
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "progressbar",
+          "progressbar": {
+            "meta": {
+              "barBackgroundColor": "#AAE4EA",
+              "barColor": "#00C1D4",
+              "step": 4,
+              "totalSteps": 5
+            },
+            "title": {
+              "meta": {
+                "text": "¡Completa tus datos!",
+                "textAlignment": "center",
+                "textColor": "#003865",
+                "textSize": 22,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "required": false,
+          "type": "progressbar"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Ingresa o edita la información necesaria",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 16,
+              "weightFont": "regular"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 24
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "academicLevel",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/graduacion-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/graduacion-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/graduacion-error.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Sin estudios"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Educación Primaria (1ero a 3er grado)"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Educación Primaria (4to a 6to grado)"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Educación Básica"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Educación Diversificada"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Educación Universitaria y/o Técnico"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Maestría, Posgrado y/o Doctorado"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona tu nivel académico",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu nivel académico",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "¿Cuál es tu nivel académico?",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "dependentsQuantity",
+                "isEnable": true,
+                "keyboardType": "INT",
+                "maxLength": 2,
+                "minLength": 1,
+                "regex": "^(\\d+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Mínimo de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,2}$",
+                    "text": "Máximo de 2 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^(0?|1?\\d|20)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa tus datos personales.",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Personales",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "personalesCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 5,
+                "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Mínimo de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Máximo de 100 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0A 00 calle, 00 avenida, Col. Abeja",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Dirección",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "INT",
+                "maxLength": 2,
+                "minLength": 1,
+                "regex": "^[0-9]+$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Mínimo de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,2}$",
+                    "text": "Máximo de 2 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-25",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Zona",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "housingStatus",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/home-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/home-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/home-error.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Propia"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Alquilada"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona el estatus de la vivienda",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar el estatus",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona estatus de la vivienda",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "defaultValue": false,
+                "id": "checkbox",
+                "isEnabled": false,
+                "required": true,
+                "selectedValue": false,
+                "title": {
+                  "meta": {
+                    "text": "Declaro que los fondos que utilizo para el pago mensual del producto son propios y que mi dirección es verídica.",
+                    "textAlignment": "left",
+                    "textColor": "#000000",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "checkbox"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa los datos de tu domicilio",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Domicilio",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "domicilioCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "iconRight": {
+                  "meta": {
+                    "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/agenda-usuario-default.png"
+                  }
+                },
+                "id": "phoneNumber",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 8,
+                "minLength": 8,
+                "regex": "^([0-9]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^[345][0-9]*?$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "****6565",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "contactEmail",
+                "isEnable": true,
+                "keyboardType": "EMAIL",
+                "maxLength": 40,
+                "minLength": 8,
+                "regex": "^[@\\w\\.-]*$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{8,}$",
+                    "text": "Mínimo de 8 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,40}$",
+                    "text": "Máximo de 40 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^[\\w-\\*\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "g*******@bi.com.gt",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. juanjose@correo.com",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Tu correo electrónico",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa tus datos de contacto",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Contacto",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "contactoCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "profession",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/utiles-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/utiles-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/utiles-error.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Ninguna"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Abogado"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Administrador"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Arquitecto"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Cont Publ Auditor"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Economista"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Ingeniero"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Medico"
+                    },
+                    {
+                      "id": 9,
+                      "value": "Ingeniero Quimico"
+                    },
+                    {
+                      "id": 10,
+                      "value": "Psicologo"
+                    },
+                    {
+                      "id": 11,
+                      "value": "Humanista"
+                    },
+                    {
+                      "id": 12,
+                      "value": "Bachiller"
+                    },
+                    {
+                      "id": 13,
+                      "value": "Maestro"
+                    },
+                    {
+                      "id": 14,
+                      "value": "Militar"
+                    },
+                    {
+                      "id": 15,
+                      "value": "Perito Contador"
+                    },
+                    {
+                      "id": 16,
+                      "value": "Programador"
+                    },
+                    {
+                      "id": 17,
+                      "value": "Secretaria"
+                    },
+                    {
+                      "id": 18,
+                      "value": "Analista"
+                    },
+                    {
+                      "id": 19,
+                      "value": "Estudiante"
+                    },
+                    {
+                      "id": 20,
+                      "value": "Catedrático/a"
+                    },
+                    {
+                      "id": 21,
+                      "value": "Otros"
+                    },
+                    {
+                      "id": 22,
+                      "value": "Lic. Informatica"
+                    },
+                    {
+                      "id": 23,
+                      "value": "Mecanico Automotriz"
+                    },
+                    {
+                      "id": 24,
+                      "value": "Mecanico Industrial"
+                    },
+                    {
+                      "id": 25,
+                      "value": "Ing. Agronomo"
+                    },
+                    {
+                      "id": 26,
+                      "value": "Enfermero/A"
+                    },
+                    {
+                      "id": 27,
+                      "value": "Cosmetologa"
+                    },
+                    {
+                      "id": 28,
+                      "value": "Estilista"
+                    },
+                    {
+                      "id": 29,
+                      "value": "Veterinario"
+                    },
+                    {
+                      "id": 30,
+                      "value": "Zootecnista"
+                    },
+                    {
+                      "id": 31,
+                      "value": "Tipografo"
+                    },
+                    {
+                      "id": 32,
+                      "value": "Dentista"
+                    },
+                    {
+                      "id": 33,
+                      "value": "Aviador"
+                    },
+                    {
+                      "id": 34,
+                      "value": "Litografo"
+                    },
+                    {
+                      "id": 35,
+                      "value": "Lic. Pedagogia"
+                    },
+                    {
+                      "id": 36,
+                      "value": "Dibujante"
+                    },
+                    {
+                      "id": 37,
+                      "value": "Radiotecnico"
+                    },
+                    {
+                      "id": 38,
+                      "value": "Antropologo/A"
+                    },
+                    {
+                      "id": 39,
+                      "value": "Perito Mercadotecnia"
+                    },
+                    {
+                      "id": 40,
+                      "value": "Visitador Medico"
+                    },
+                    {
+                      "id": 41,
+                      "value": "Auditor"
+                    },
+                    {
+                      "id": 42,
+                      "value": "Piloto Automotriz"
+                    },
+                    {
+                      "id": 43,
+                      "value": "Farmaceutico/Ca"
+                    },
+                    {
+                      "id": 44,
+                      "value": "Editor"
+                    },
+                    {
+                      "id": 45,
+                      "value": "Publicista"
+                    },
+                    {
+                      "id": 46,
+                      "value": "Electromecanico"
+                    },
+                    {
+                      "id": 47,
+                      "value": "Periodista"
+                    },
+                    {
+                      "id": 48,
+                      "value": "Fisioterapista"
+                    },
+                    {
+                      "id": 49,
+                      "value": "Aeromosa"
+                    },
+                    {
+                      "id": 50,
+                      "value": "Perito Agronomo"
+                    },
+                    {
+                      "id": 51,
+                      "value": "Ortodoncista"
+                    },
+                    {
+                      "id": 52,
+                      "value": "Lic. En Ccss De La Comunicacion"
+                    },
+                    {
+                      "id": 53,
+                      "value": "Sacerdote"
+                    },
+                    {
+                      "id": 54,
+                      "value": "Nutriologo"
+                    },
+                    {
+                      "id": 55,
+                      "value": "Diseñador Grafico"
+                    },
+                    {
+                      "id": 56,
+                      "value": "Lic En Mercadeo"
+                    },
+                    {
+                      "id": 57,
+                      "value": "Sociologo"
+                    },
+                    {
+                      "id": 58,
+                      "value": "Trabaj Social"
+                    },
+                    {
+                      "id": 59,
+                      "value": "Biólogo"
+                    },
+                    {
+                      "id": 60,
+                      "value": "Arqueologo"
+                    },
+                    {
+                      "id": 61,
+                      "value": "Dermatologo"
+                    },
+                    {
+                      "id": 62,
+                      "value": "Topografo"
+                    },
+                    {
+                      "id": 63,
+                      "value": "Perito En Computacion"
+                    },
+                    {
+                      "id": 64,
+                      "value": "Contralor"
+                    },
+                    {
+                      "id": 65,
+                      "value": "Perito Electronica"
+                    },
+                    {
+                      "id": 66,
+                      "value": "Futbolista Prof"
+                    },
+                    {
+                      "id": 67,
+                      "value": "Fotografo Prof"
+                    },
+                    {
+                      "id": 68,
+                      "value": "Músico Filarmonico"
+                    },
+                    {
+                      "id": 69,
+                      "value": "Asesor Seguros"
+                    },
+                    {
+                      "id": 70,
+                      "value": "Perito Admon Public"
+                    },
+                    {
+                      "id": 71,
+                      "value": "Psiquiatra"
+                    },
+                    {
+                      "id": 72,
+                      "value": "Paramedico"
+                    },
+                    {
+                      "id": 73,
+                      "value": "Perito Admon Emp"
+                    },
+                    {
+                      "id": 74,
+                      "value": "Perito Forestal"
+                    },
+                    {
+                      "id": 75,
+                      "value": "Agricultor"
+                    },
+                    {
+                      "id": 76,
+                      "value": "Comerciante"
+                    },
+                    {
+                      "id": 77,
+                      "value": "Terapeuta"
+                    },
+                    {
+                      "id": 78,
+                      "value": "Mercadologo/A"
+                    },
+                    {
+                      "id": 79,
+                      "value": "Perito En Construccion"
+                    },
+                    {
+                      "id": 80,
+                      "value": "Oficinista"
+                    },
+                    {
+                      "id": 81,
+                      "value": "Bibliotecologa"
+                    },
+                    {
+                      "id": 82,
+                      "value": "Jornalero"
+                    },
+                    {
+                      "id": 83,
+                      "value": "Pediatra"
+                    },
+                    {
+                      "id": 84,
+                      "value": "Ingeniero Agronomo"
+                    },
+                    {
+                      "id": 85,
+                      "value": "Electricista"
+                    },
+                    {
+                      "id": 86,
+                      "value": "Pastor Evangelico"
+                    },
+                    {
+                      "id": 87,
+                      "value": "Ofic Del Ejercito"
+                    },
+                    {
+                      "id": 88,
+                      "value": "Admon En Recursos Humanos"
+                    },
+                    {
+                      "id": 89,
+                      "value": "Lic En Sistemas"
+                    },
+                    {
+                      "id": 90,
+                      "value": "Lic En Ciencias Politicas"
+                    },
+                    {
+                      "id": 91,
+                      "value": "Quimico Biologo"
+                    },
+                    {
+                      "id": 92,
+                      "value": "Lic. Quimico Farmaceutico"
+                    },
+                    {
+                      "id": 93,
+                      "value": "Vicepresidente De Operaciones"
+                    },
+                    {
+                      "id": 94,
+                      "value": "Licenciado"
+                    },
+                    {
+                      "id": 95,
+                      "value": "Técnico"
+                    },
+                    {
+                      "id": 96,
+                      "value": "Empresario"
+                    },
+                    {
+                      "id": 97,
+                      "value": "Auxiliar"
+                    },
+                    {
+                      "id": 98,
+                      "value": "Promotor De Ventas"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona tu profesión u oficio",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu profesión u oficio",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu profesión u oficio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "currentJob",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 5,
+                "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Mínimo de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Máximo de 100 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. enfermero/a",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Puesto actual",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "iconRight": {
+                  "meta": {
+                    "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/agenda-usuario-default.png"
+                  }
+                },
+                "id": "workPhoneNumber",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 8,
+                "minLength": 8,
+                "regex": "^([0-9]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^[345][0-9]*?$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "workAddress",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 5,
+                "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Mínimo de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Máximo de 100 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0A 00 calle, 00 avenida, Edif. Abeja",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Dirección",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "workZone",
+                "isEnable": true,
+                "keyboardType": "INT",
+                "maxLength": 2,
+                "minLength": 1,
+                "regex": "^[0-9]+$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Mínimo de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,2}$",
+                    "text": "Máximo de 2 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-25",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Zona",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "workDepartment",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/departamento-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/departamento-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/departamento-validado-incorrecto.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "workMunicipality",
+                  "parentId": "",
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textAlignment": "center",
+                      "textColor": "#000000",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Buscar departamento",
+                        "textColor": "#c6c6c6",
+                        "textSize": 16,
+                        "weightFont": "regular"
+                      }
+                    }
+                  },
+                  "title": {
+                    "meta": {
+                      "text": "",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  },
+                  "url": "/api/address/v3/departments"
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorDone.png?alt=media\u0026token=755e3c1d-194d-4d9e-96b5-9ada542d08f2",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu departamento",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "workMunicipality",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/municipio-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/municipio-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/municipio-validado-incorrecto.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "parentId": "workDepartment",
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar municipio",
+                      "textAlignment": "center",
+                      "textColor": "#000000",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Buscar municipio",
+                        "textColor": "#c6c6c6",
+                        "textSize": 16,
+                        "weightFont": "regular"
+                      }
+                    }
+                  },
+                  "title": {
+                    "meta": {
+                      "text": "",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  },
+                  "url": "/api/address/v4/municipalities"
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorDone.png?alt=media\u0026token=755e3c1d-194d-4d9e-96b5-9ada542d08f2",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu municipio",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu municipio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa tus datos laborales",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Laborales",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "laboralesCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "id": "interactiveTextFieldSelector",
+                "interactiveSelector": {
+                  "hasSingleSelection": false,
+                  "items": [
+                    {
+                      "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/maletin-default.png",
+                      "id": "dependRelationship",
+                      "isEnabled": false,
+                      "isSelected": true,
+                      "label": {
+                        "meta": {
+                          "secondaryText": "",
+                          "secondaryTextColor": "#000000",
+                          "text": "Relación de dependencia",
+                          "textAlignment": "center",
+                          "textColor": "#000000",
+                          "textSize": 10,
+                          "weightFont": "bold"
+                        }
+                      }
+                    },
+                    {
+                      "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/tienda-default.png",
+                      "id": "ownBusiness",
+                      "interactiveTextField": {
+                        "bottomSheet": {
+                          "content": [
+                            {
+                              "description": {
+                                "meta": {
+                                  "text": "Establecimiento comercial, que tiene como objetivo satisfacer las necesidades de sus clientes a través de prestar o vender un producto o servicio.",
+                                  "textAlignment": "left",
+                                  "textColor": "#003865",
+                                  "textSize": 16,
+                                  "weightFont": "normal"
+                                }
+                              }
+                            }
+                          ],
+                          "title": {
+                            "meta": {
+                              "text": "Negocio propio",
+                              "textAlignment": "left",
+                              "textColor": "#003865",
+                              "textSize": 16,
+                              "weightFont": "bold"
+                            }
+                          }
+                        },
+                        "errorLabel": {
+                          "meta": {
+                            "text": "",
+                            "textColor": "#c6c6c6",
+                            "textSize": 10,
+                            "weightFont": "regular"
+                          }
+                        },
+                        "id": "ownBusiness",
+                        "isEnable": true,
+                        "keyboardType": "alphanumeric",
+                        "maxLength": 50,
+                        "minLength": 5,
+                        "required": true,
+                        "singleValidation": [
+                          {
+                            "id": "errorRegex",
+                            "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^\\s ]+)$",
+                            "text": "Revisa tu información en este campo."
+                          },
+                          {
+                            "id": "emptyError",
+                            "text": "No olvides llenar este campo."
+                          }
+                        ],
+                        "textField": {
+                          "meta": {
+                            "text": "",
+                            "textColor": "#003865",
+                            "textSize": 16,
+                            "weightFont": "bold"
+                          },
+                          "placeHolder": {
+                            "meta": {
+                              "text": "ej. Nombre comercial",
+                              "textColor": "#829DB4",
+                              "textSize": 16,
+                              "weightFont": "regular"
+                            }
+                          }
+                        },
+                        "title": {
+                          "meta": {
+                            "text": "Negocio propio",
+                            "textColor": "#003865",
+                            "textSize": 14,
+                            "weightFont": "regular"
+                          }
+                        },
+                        "type": "interactiveTextField"
+                      },
+                      "isEnabled": true,
+                      "isSelected": false,
+                      "label": {
+                        "meta": {
+                          "secondaryText": "demora de 3 a 5 minutos.",
+                          "secondaryTextColor": "#000000",
+                          "text": "Negocio propio",
+                          "textAlignment": "center",
+                          "textColor": "#003865",
+                          "textSize": 10,
+                          "weightFont": "bold"
+                        }
+                      }
+                    },
+                    {
+                      "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/efectivo-arriba-default.png",
+                      "id": "otherSources",
+                      "interactiveTextField": {
+                        "bottomSheet": {
+                          "content": [
+                            {
+                              "description": {
+                                "meta": {
+                                  "text": "Cualquier fuente de ingreso o beneficio económico...",
+                                  "textAlignment": "right",
+                                  "textColor": "#003865",
+                                  "textSize": 16,
+                                  "weightFont": "normal"
+                                }
+                              }
+                            }
+                          ],
+                          "title": {
+                            "meta": {
+                              "text": "Otras fuentes",
+                              "textAlignment": "left",
+                              "textColor": "#003865",
+                              "textSize": 16,
+                              "weightFont": "bold"
+                            }
+                          }
+                        },
+                        "errorLabel": {
+                          "meta": {
+                            "text": "",
+                            "textColor": "#c6c6c6",
+                            "textSize": 10,
+                            "weightFont": "regular"
+                          }
+                        },
+                        "id": "otherSources",
+                        "isEnable": true,
+                        "keyboardType": "alphanumeric",
+                        "maxLength": 50,
+                        "minLength": 5,
+                        "required": true,
+                        "singleValidation": [
+                          {
+                            "id": "errorRegex",
+                            "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^\\s ]+)$",
+                            "text": "Revisa tu información en este campo."
+                          },
+                          {
+                            "id": "emptyError",
+                            "text": "No olvides llenar este campo."
+                          }
+                        ],
+                        "textField": {
+                          "meta": {
+                            "text": "",
+                            "textColor": "#003865",
+                            "textSize": 16,
+                            "weightFont": "bold"
+                          },
+                          "placeHolder": {
+                            "meta": {
+                              "text": "ej. Renta, actividades profesionales, etc",
+                              "textColor": "#829DB4",
+                              "textSize": 16,
+                              "weightFont": "regular"
+                            }
+                          }
+                        },
+                        "title": {
+                          "meta": {
+                            "text": "Otras fuentes",
+                            "textColor": "#003865",
+                            "textSize": 14,
+                            "weightFont": "regular"
+                          }
+                        },
+                        "type": "interactiveTextField"
+                      },
+                      "isEnabled": true,
+                      "isSelected": false,
+                      "label": {
+                        "meta": {
+                          "secondaryText": "demora de 3 a 5 minutos.",
+                          "secondaryTextColor": "#000000",
+                          "text": "Otras fuentes",
+                          "textAlignment": "center",
+                          "textColor": "#000000",
+                          "textSize": 10,
+                          "weightFont": "bold"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "required": false,
+                "type": "interactiveTextFieldSelector"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa los datos de tus ingresos adicionales",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "helpIcon": {
+              "subtitleInfo": {
+                "meta": {
+                  "text": "Son todos aquellos ingresos que obtiene una persona para generar dinero o recursos económicos.",
+                  "textAlignment": "left",
+                  "textColor": "#004D55",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              }
+            },
+            "isCollapsed": true,
+            "subtitleCollapsed": {
+              "meta": {
+                "text": "Si aplica, elige una o dos opciones",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "subtitleExpandable": {
+              "meta": {
+                "text": "Presiona el botón de ayuda para conocer más",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "title": {
+              "meta": {
+                "text": "Ingresos adicionales",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "additionalIncomeCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "beneficiaryName",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 5,
+                "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Mínimo de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Máximo de 100 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Jose Manuel Pérez López",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Nombre completo",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "beneficiaryRelationship",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/usuario-validado.png",
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/usuario-default.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/usuario-error.png",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Padre"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Madre"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Hermano/a"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Conyuge"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Hijo/a"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Otro"
+                    },
+                    {
+                      "id": 7,
+                      "value": "No existe parentesco"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona el parentesco",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar el parentesco",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#004D55",
+                    "textSize": 11,
+                    "weightFont": "regular"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona el parentesco",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa los datos de tu beneficiario",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "helpIcon": {
+              "subtitleInfo": {
+                "meta": {
+                  "text": "Es la persona que recibirá el total o una parte de los fondos de la cobertura del seguro médico tras el fallecimiento del titular.",
+                  "textAlignment": "left",
+                  "textColor": "#004D55",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Beneficiario",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "beneficiaryCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 8
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "componentCard": {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "referenceName",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 5,
+                "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Mínimo de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Máximo de 100 caracteres"
+                  },
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Sofía Lucía Garcia Godoy",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Nombre completo",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "id": "verticalSpacer",
+                "meta": {
+                  "height": 16
+                },
+                "type": "verticalSpacer"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "iconRight": {
+                  "meta": {
+                    "icon": "https://media.corporacionbi.com/Imagenes/root/ConsumerCredit/agenda-usuario-default.png"
+                  }
+                },
+                "id": "referencePhoneNumber",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 8,
+                "minLength": 8,
+                "regex": "^([0-9]+)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^[345][0-9]*?$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              }
+            ],
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa los datos de tu referencia",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            },
+            "isCollapsed": true,
+            "title": {
+              "meta": {
+                "text": "Referencia Personal",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 14,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "id": "referencePersonalCard",
+          "type": "interactiveComponentCard"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 38
+          },
+          "type": "verticalSpacer"
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/consumer_credits/v1/page/user_identification",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#9EA2A2",
+          "enableBackgroundColor": "#003865",
+          "id": "Continuar",
+          "title": {
+            "meta": {
+              "text": "Continuar",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

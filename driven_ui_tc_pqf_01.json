@@ -1,0 +1,312 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "b54438f5ed05eb4faa2cd6e3bf02bc493b31f0b6e88a686af0eed02aa8fc0478409359b064d34ec8d85274412332d925554e013288d65e8a3ead21f6f708be3357a10681e889caec60417c93f001bc838a79f47b80e7d9937e9f8171b2bac2ee6573d25e649182966b6105b8cef3e11c5c993580e5d3cbd418c83f6759225f6b2539d644f2d26c77dc7664dc9c95d7a36ad53002c8916211f822862b91ed89fd8dc9188fb96a611c56b629b4d192bf686fa79d26a8fbbbd48d34346b6cf1e2a3"
+  },
+  "responseContent": {
+    "data": {
+      "id": "intro",
+      "title": "Solicita tu Tarjeta de Crédito",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 28
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Solicita tu Tarjeta de Crédito",
+              "textAlignment": "center",
+              "textColor": "#00325B",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "te tomará unos minutos",
+              "textAlignment": "center",
+              "textColor": "#4F5151",
+              "textSize": 16,
+              "weightFont": "regular"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "labelList",
+          "labelList": {
+            "labels": [
+              {
+                "id": "label",
+                "label": {
+                  "meta": {
+                    "text": "Utilízala en línea inmediatamente",
+                    "textAlignment": "center",
+                    "textColor": "#8E9292",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "required": false,
+                "type": "label"
+              },
+              {
+                "id": "label",
+                "label": {
+                  "meta": {
+                    "text": "Realiza pagos sin contacto, fácil y rápido",
+                    "textAlignment": "center",
+                    "textColor": "#8E9292",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "required": false,
+                "type": "label"
+              },
+              {
+                "id": "label",
+                "label": {
+                  "meta": {
+                    "text": "Personaliza tu tarjeta física",
+                    "textAlignment": "center",
+                    "textColor": "#8E9292",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "required": false,
+                "type": "label"
+              }
+            ],
+            "symbol": "•",
+            "symbolColor": "#8E9292"
+          },
+          "type": "labelList"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 40
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "brandCards": [
+            {
+              "id": "brandVisa",
+              "isChecked": false,
+              "image": {
+                "meta": {
+                  "scaleType": "centerCrop",
+                  "icon": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAA0lBMVEVHcEwAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6AAI6D///8AI6D/oAC/yOd/kc8/WbcPMKbv8flfdcPf4/MfPqyfrNtvg8mPntXP1u0vTLKvuuH/tz9PZ73/89//4a8QK5b/z3//25//pg//w1/5oQ3/7c9pWmj/rB8wO4L/yW//57+Pb1ZgUmQgM4z4oA3/1Y/Qji3imCSse0BQSm6ygUJ4YV3/+e/vnhm/hjfXlTBaU3K3hkTvwXnkmyWTipeke02rDmJ4AAAAEHRSTlMA4CAw8BBgwIBAoNCwcFCQ3zhEXQAACThJREFUeNrtnXl7mzgQxnET525qFokbTNymSbu9273v6/t/pTW+gkEazVCe7rPmff+sXRv9GL0zkgbH8yAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIOnydn12cHqienDxyjv7i2D9oTc4oBuen/gh0YUMwvVq/QedFcIiqVJyuBnh8Zr79q+CfZ9HsgJXkYT3K02l3/Cer4QezQ1ekagSTI+P41WwMSnQ9DVoErpf/FgazkSiuY2BvFjxazv+wnI1GWe0DTQCXy38Y0fjXMfB43wCK2ai09IHjXT0wXU4APa7xz5JlLrhoBkAyMgAztRz09MEB4rGNfxaFOxc4GpsDrpX7/uUawGPfT8c3/lm5vO9rG1yugfIRApgt58D1CsDE96sxAlj4/npZOE4LWOWBqy2AMY5/VmzK4aOxAgg2AM4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+S5WVirVeNbTNtY5VFXwxAHc3pJ4/Iz8y0x1tXsltL3SUFIvQ0N45zx0NjEnR/o6gD4DnXzl0/439EyPDhW+uuvuC+ROKOdHjuqjsMaO7b9d9ADy9e3HvQPDCHgCGa95cHwtAEju6fEPBN7snttUD3r19TRKwTgPD3dvcs6ob0t27n7v7nC2zoDK/O+hvgs9eEABe22Zh9xK2jRfKFhqNQYTu8VsiILL81+JzssDPd/Yw+Nr8gd1R7hovFp1X2l25OafR3TKrbf83/sw0+O7GAuCt+QPT7iUk1smx72eRZnX656IAMEwzaR3w1DwTbsxG7NvjvPvSXktGNOc96lBwI4+2DEkhZEZgfGtstUBnEtDMZz0CbuSxXJBZCb77jWkCodUC66+yvcSe/76tmzOzv18NUgrPX31qA7jjXUdhD1LtTmLcxE6Ez2IQALl/+yvDBTUxBWPq3kQhd/yamXzdhZMIQH2Dfv/kcsGEykJdOFmPCWBOa7l4zkgBrCr8j985XFBRFkS9FtlveK3UNaXJ+KkGWQ6vctTtj7QLpkQWTqgEZUxiYVzt3hEF+dxu6hkZM2oQAJtL/Ilywa7PN6I8oCanKYnl7QSeqNQS0LpP6SgEsL3+Vw8AnruLgPBhEAVxYYYSoWkQjauIF7zqi70g5O8IbT/tw0ubCxqcPKZ8KifgiJ5dcC2gy0EA7MLszZbAvXsmllSYFtQIBPtfzhSaDQLg4S79sA2Bp66ZqEmjDljlg1vt+Al5yycpgMZE+2DcFElo9NQYtTB30bknliwIBbvCDbCvTC6oyBpMmgT4HtD55EoLXFAAoLmf8b3BBVNy5Z5R80PLd3LM17VeYsUCQxEA2Jtq33ZcsKRrUEXhMebxBc8Gku7nFgKYAgB733T7S9sFY7oAoZKAYbNsNXVZjzHm3cwTCOaT5GRoL8bftF0wpLNPSiW6wlbEMoIgNDiewAUlAPbv8ft9F6wcy1Ay0VlLudCJIDMF1pzvghIAre/6a88FF/TmZUDzsW8HuhDMTVwFLigB0Fqzvmm6YOJYhme0Q1DLORJBadz/yfguKDodbtH+p+GChWMNphy72ylVyqYVfxmQGbHEwwBoGe7tywcXTB0FuHbk+cCxD1YyT2JDs+PMhwHQvsr3OxcsXTtxqWu149oTy1nLgO2t5teCsgYJvx0CN9YiIJ/xk4DDBzdBEHFOA0oLzmAYAG2w7++tRUDi2LLo7NU6D4bmkftAOLWZqhoGQNvKbjcumLm2oSrGPlUPAtpmLCX7cEAGoGNVf9xZioBsJkoCawKxkEBij7uQOoTqD6AzlT/+ad7UDh0rNktmVrIzgdweVpq7wSIE0Pncv81FgHJu25pdKXGckFb0VlhmRxkMA0AZE2zqPIzhb3kFdElElo+NPeiK64JCAIFpIKXzPDKRbFWrkLm/OSdmSMI9HJA2SoaG0MqdG3qB6LAiIhAsqA+tiAohHAjAwhBaqe+yXCXc8iMQRPZlQEpeaDIMAEPtWboP42Jh10KNwGWDEZ1ZFXObWQqg7Lpg7j6P5iYBRkJQ9qgqyVmXDwOgawJR6g7vUHRaRZ54LezLq70e4TnTdcQAOleVu+9uJG5gtRPQ4pYa+ivFADLnF6WM5Mn81a7UDkCLAZTDAEh69PEVoixIl8aaexnMkxb5AxOpq5U3YnTwMH+5NrACiOUA4oEA5PLv0cy7wZlvincizu6ZlQOo5FONOhlPhC5YMJ2I2zMrBxCJOUfUlvk8LRJ20bHjm/YBEAwDwOG/GWsm768TY3NZZNoiCjl7yJJusR4AyF2LkFM+N5LAxs3TvOQtjOO+FmjbFusBIJDuXueEUQaNrsCsEQiBSu1hnPQav7n46PPcIOXAvC4+ZQunUHc6Qw1jUP0AGC+uD4CFsCeRSgLCYM6cd4C9ofYZAApZQxqZBGQVre6fA20u2AdAIrJAOgnIbmZpgZZqg0JWfPZ6djgVHeBRSSDqUc2X7IYqzv3pBSCWuAwzCfCL+Zj5vYZd02QgAJnEAskkUMjHb1gGLLjLlmogAInAAukkkIvHb2JWcW+UGgiA5Sg75c3EXkkgzOwGFLJvlB4KQM6vtYdJAg8dIgG3d8L08eFQACq+BdLPjEtvv7EKK/nrtnIgADP2WsPxzDinpkmbXWKJz58BrMOBngA0d7nt2g+LsoVjCZe5qtBYsG5TQwHoPKOg9YLNqh2HldJmL0jjzk+GGE4DEsHmzWAABlcSFPVvxqQ7nrEKvsiffMHvCAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA6AA8GjuA0f7hZdUAEIwUwMUKwCX9s3sHK7394+sXsh9xPBiFvn++AnDi+gXiw1TdwDP1tmmgGh+A2PevvLVO2Q+zHZDqlqOTDYCTMeaBZQAcTzcAvInvp9G4xl83UZ1tx7+qhseVCOrnvie7APC8K39ktUDdwHb+MH5vOhkXgbrv/onX1NEx/7He/3/81x3fp57XJaCTMYx/9SedLqeeiUCoDj4ZrP8s22ln/MuC8HL9EOMhF4VJtm7fPfOMOjve9OAu1EFq2447Ofcsml4c+wevyYlHaHpyddCjP7649pw6f3x2oLo+8iAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIGoH+BThxC+14KNZxAAAAAElFTkSuQmCC",
+                  "width": 200,
+                  "height": 100
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Con MasterCard obtienes",
+                  "textAlignment": "center",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "bold"
+                }
+              },
+              "labelList": {
+                "id": "labelListBrandVisa",
+                "type": "labelList",
+                "labelList": {
+                  "symbolColor": "#000000",
+                  "symbol": "•",
+                  "labels": [
+                    {
+                      "id": "label",
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Membresía gratis durante el primer año",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textAlignment": "start",
+                          "textColor": "#8E9292"
+                        }
+                      }
+                    },
+                    {
+                      "id": "label",
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Beneficios y promociones exclusivas",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textAlignment": "start",
+                          "textColor": "#8E9292"
+                        }
+                      }
+                    },
+                    {
+                      "id": "label",
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Paga en cuotas todas las compras que realices en línea",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textAlignment": "start",
+                          "textColor": "#8E9292"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "id": "brandSelectionCards",
+          "labelListCard": {
+            "componentCard": {
+              "isCollapsed": true,
+              "labelList": {
+                "id": "labelListRequirement",
+                "type": "labelList",
+                "labelList": {
+                  "symbolColor": "#00C1D4",
+                  "symbol": "•",
+                  "labels": [
+                    {
+                      "id": "label",
+                      "required": false,
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Correo Electrónico activo.",
+                          "textSize": 12,
+                          "weightFont": "regular",
+                          "textAlignment": "center",
+                          "textColor": "#9C9C9C"
+                        }
+                      }
+                    },
+                    {
+                      "id": "label",
+                      "required": false,
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Número de teléfono activo en Guatemala.",
+                          "textSize": 12,
+                          "weightFont": "regular",
+                          "textAlignment": "center",
+                          "textColor": "#9C9C9C"
+                        }
+                      }
+                    },
+                    {
+                      "id": "label",
+                      "required": false,
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Salario mínimo de Q3,000 mensuales.",
+                          "textSize": 12,
+                          "weightFont": "regular",
+                          "textAlignment": "center",
+                          "textColor": "#9C9C9C"
+                        }
+                      }
+                    },
+                    {
+                      "id": "label",
+                      "required": false,
+                      "type": "label",
+                      "label": {
+                        "meta": {
+                          "text": "Datos de tu lugar de trabajo.",
+                          "textSize": 12,
+                          "weightFont": "regular",
+                          "textAlignment": "center",
+                          "textColor": "#9C9C9C"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "subtitleCollapsed": {
+                "meta": {
+                  "text": "Presiona y conócelos",
+                  "textColor": "#8E9292",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "subtitleExpandable": {
+                "meta": {
+                  "text": "Necesitamos que poseas los siguientes datos",
+                  "textColor": "#8E9292",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Requisitos de tarjeta",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "Bold"
+                }
+              }
+            },
+            "id": "branRequirementsCard"
+          },
+          "required": false,
+          "type": "brandSelectionCards"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 40
+          },
+          "type": "verticalSpacer"
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/political_association",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#829DB4",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Siguiente",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

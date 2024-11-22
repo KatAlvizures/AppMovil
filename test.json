@@ -1,0 +1,2287 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "d60572cc508c1d15c52522311ca622c10edfd4b427faf03b559a238f8567ba097b2fc9ab4381ff46805be60c61826f908971de376ead90adbe871922392cb20c07d4d1c9da333190f1b5f997bba8a8f86e447e059483bf82e7c0c87f413fa25033b92168b71bbbbc77375bf7012d5666cc7bdef37667dd4d3b222cf2e917587353ee22d0cbd41f90a0af578a10c5b2c4f70e9453f6e41f25600fc8acaf45feac66a8f3981446f86f5655742f3b8ed57e9ccb71c56a10b7bf165eea6071a9e474"
+  },
+  "data": {
+    "id": "complete_your_data",
+    "title": "Solicita tu crédito",
+    "body": [
+      {
+        "id": "progressbar",
+        "progressbar": {
+          "meta": {
+            "barBackgroundColor": "#AAE4EA",
+            "barColor": "#00C1D4",
+            "step": 4,
+            "totalSteps": 5
+          },
+          "title": {
+            "meta": {
+              "text": "¡Completa tus datos!",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "required": false,
+        "type": "progressbar"
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Ingresa o edita la información necesaria",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 16,
+            "weightFont": "regular"
+          }
+        },
+        "required": false,
+        "type": "label"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPicker",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Sin estudios"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Educación Primaria (1ero a 3er grado)"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Educación Primaria (4to a 6to grado)"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Educación Básica"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Educación Diversificada"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Educación Universitaria y/o Técnico"
+                  },
+                  {
+                    "id": 7,
+                    "value": "Maestría, Posgrado y/o Doctorado"
+                  }
+                ],
+                "parentId": "",
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu nivel académico",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                }
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu nivel académico",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "¿Cuál es tu nivel académico?",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextField",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 2,
+              "minLength": 1,
+              "regex": "^(0?|1?\\d|20)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{1,}$",
+                  "text": "Mínimo de 1 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,2}$",
+                  "text": "Máximo de 2 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Cantidad de dependientes",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Personales",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextField",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 100,
+              "minLength": 5,
+              "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{5,}$",
+                  "text": "Mínimo de 5 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,100}$",
+                  "text": "Máximo de 100 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. Calle 4 Casa #23",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Dirección",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextField",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 2,
+              "minLength": 1,
+              "regex": "^[0-9]+$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{1,}$",
+                  "text": "Mínimo de 1 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,2}$",
+                  "text": "Máximo de 2 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "Ingresa el número de tu zona",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Zona",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPicker",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Propia"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Alquilada"
+                  }
+                ],
+                "parentId": "",
+                "title": {
+                  "meta": {
+                    "text": "Selecciona el estatus de la vivienda",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                }
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar el estatus",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona estatus de la vivienda",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            },
+            {
+              "defaultValue": false,
+              "id": "checkbox",
+              "isEnabled": false,
+              "required": true,
+              "selectedValue": false,
+              "title": {
+                "meta": {
+                  "text": "Declaro que los fondos que utilizo para el pago mensual del producto son propios y que mi dirección es verídica.",
+                  "textAlignment": "left",
+                  "textColor": "#000000",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "checkbox"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa los datos de tu domicilio.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Domicilio",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "phoneNumberTextField",
+              "isEnable": true,
+              "keyboardType": "PHONE",
+              "maxLength": 12,
+              "minLength": 8,
+              "regex": "^([3-5]{1})[0-9]*?$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^[345][0-9]*?$",
+                  "text": "Formato de número inválido."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: +502 55909022",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textAlignment": "center",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Número de teléfono",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "phoneNumberTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "email",
+              "isEnable": true,
+              "keyboardType": "EMAIL",
+              "maxLength": 40,
+              "minLength": 8,
+              "regex": "^[@\\w\\.-]*$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{8,}$",
+                  "text": "Mínimo de 8 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,40}$",
+                  "text": "Máximo de 40 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. juanjose@correo.com",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Tu correo electrónico",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos de contacto.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Contacto",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPickerProfession",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Ninguna"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Abogado"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Administrador"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Arquitecto"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Cont Publ Auditor"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Economista"
+                  },
+                  {
+                    "id": 7,
+                    "value": "Ingeniero"
+                  },
+                  {
+                    "id": 8,
+                    "value": "Medico"
+                  },
+                  {
+                    "id": 9,
+                    "value": "Ingeniero Quimico"
+                  },
+                  {
+                    "id": 10,
+                    "value": "Psicologo"
+                  },
+                  {
+                    "id": 11,
+                    "value": "Humanista"
+                  },
+                  {
+                    "id": 12,
+                    "value": "Bachiller"
+                  },
+                  {
+                    "id": 13,
+                    "value": "Maestro"
+                  },
+                  {
+                    "id": 14,
+                    "value": "Militar"
+                  },
+                  {
+                    "id": 15,
+                    "value": "Perito Contador"
+                  },
+                  {
+                    "id": 16,
+                    "value": "Programador"
+                  },
+                  {
+                    "id": 17,
+                    "value": "Secretaria"
+                  },
+                  {
+                    "id": 18,
+                    "value": "Analista"
+                  },
+                  {
+                    "id": 19,
+                    "value": "Estudiante"
+                  },
+                  {
+                    "id": 20,
+                    "value": "Catedrático/a"
+                  },
+                  {
+                    "id": 21,
+                    "value": "Otros"
+                  },
+                  {
+                    "id": 22,
+                    "value": "Lic. Informatica"
+                  },
+                  {
+                    "id": 23,
+                    "value": "Mecanico Automotriz"
+                  },
+                  {
+                    "id": 24,
+                    "value": "Mecanico Industrial"
+                  },
+                  {
+                    "id": 25,
+                    "value": "Ing. Agronomo"
+                  },
+                  {
+                    "id": 26,
+                    "value": "Enfermero/A"
+                  },
+                  {
+                    "id": 27,
+                    "value": "Cosmetologa"
+                  },
+                  {
+                    "id": 28,
+                    "value": "Estilista"
+                  },
+                  {
+                    "id": 29,
+                    "value": "Veterinario"
+                  },
+                  {
+                    "id": 30,
+                    "value": "Zootecnista"
+                  },
+                  {
+                    "id": 31,
+                    "value": "Tipografo"
+                  },
+                  {
+                    "id": 32,
+                    "value": "Dentista"
+                  },
+                  {
+                    "id": 33,
+                    "value": "Aviador"
+                  },
+                  {
+                    "id": 34,
+                    "value": "Litografo"
+                  },
+                  {
+                    "id": 35,
+                    "value": "Lic. Pedagogia"
+                  },
+                  {
+                    "id": 36,
+                    "value": "Dibujante"
+                  },
+                  {
+                    "id": 37,
+                    "value": "Radiotecnico"
+                  },
+                  {
+                    "id": 38,
+                    "value": "Antropologo/A"
+                  },
+                  {
+                    "id": 39,
+                    "value": "Perito Mercadotecnia"
+                  },
+                  {
+                    "id": 40,
+                    "value": "Visitador Medico"
+                  },
+                  {
+                    "id": 41,
+                    "value": "Auditor"
+                  },
+                  {
+                    "id": 42,
+                    "value": "Piloto Automotriz"
+                  },
+                  {
+                    "id": 43,
+                    "value": "Farmaceutico/Ca"
+                  },
+                  {
+                    "id": 44,
+                    "value": "Editor"
+                  },
+                  {
+                    "id": 45,
+                    "value": "Publicista"
+                  },
+                  {
+                    "id": 46,
+                    "value": "Electromecanico"
+                  },
+                  {
+                    "id": 47,
+                    "value": "Periodista"
+                  },
+                  {
+                    "id": 48,
+                    "value": "Fisioterapista"
+                  },
+                  {
+                    "id": 49,
+                    "value": "Aeromosa"
+                  },
+                  {
+                    "id": 50,
+                    "value": "Perito Agronomo"
+                  },
+                  {
+                    "id": 51,
+                    "value": "Ortodoncista"
+                  },
+                  {
+                    "id": 52,
+                    "value": "Lic. En Ccss De La Comunicacion"
+                  },
+                  {
+                    "id": 53,
+                    "value": "Sacerdote"
+                  },
+                  {
+                    "id": 54,
+                    "value": "Nutriologo"
+                  },
+                  {
+                    "id": 55,
+                    "value": "Diseñador Grafico"
+                  },
+                  {
+                    "id": 56,
+                    "value": "Lic En Mercadeo"
+                  },
+                  {
+                    "id": 57,
+                    "value": "Sociologo"
+                  },
+                  {
+                    "id": 58,
+                    "value": "Trabaj Social"
+                  },
+                  {
+                    "id": 59,
+                    "value": "Biólogo"
+                  },
+                  {
+                    "id": 60,
+                    "value": "Arqueologo"
+                  },
+                  {
+                    "id": 61,
+                    "value": "Dermatologo"
+                  },
+                  {
+                    "id": 62,
+                    "value": "Topografo"
+                  },
+                  {
+                    "id": 63,
+                    "value": "Perito En Computacion"
+                  },
+                  {
+                    "id": 64,
+                    "value": "Contralor"
+                  },
+                  {
+                    "id": 65,
+                    "value": "Perito Electronica"
+                  },
+                  {
+                    "id": 66,
+                    "value": "Futbolista Prof"
+                  },
+                  {
+                    "id": 67,
+                    "value": "Fotografo Prof"
+                  },
+                  {
+                    "id": 68,
+                    "value": "Músico Filarmonico"
+                  },
+                  {
+                    "id": 69,
+                    "value": "Asesor Seguros"
+                  },
+                  {
+                    "id": 70,
+                    "value": "Perito Admon Public"
+                  },
+                  {
+                    "id": 71,
+                    "value": "Psiquiatra"
+                  },
+                  {
+                    "id": 72,
+                    "value": "Paramedico"
+                  },
+                  {
+                    "id": 73,
+                    "value": "Perito Admon Emp"
+                  },
+                  {
+                    "id": 74,
+                    "value": "Perito Forestal"
+                  },
+                  {
+                    "id": 75,
+                    "value": "Agricultor"
+                  },
+                  {
+                    "id": 76,
+                    "value": "Comerciante"
+                  },
+                  {
+                    "id": 77,
+                    "value": "Terapeuta"
+                  },
+                  {
+                    "id": 78,
+                    "value": "Mercadologo/A"
+                  },
+                  {
+                    "id": 79,
+                    "value": "Perito En Construccion"
+                  },
+                  {
+                    "id": 80,
+                    "value": "Oficinista"
+                  },
+                  {
+                    "id": 81,
+                    "value": "Bibliotecologa"
+                  },
+                  {
+                    "id": 82,
+                    "value": "Jornalero"
+                  },
+                  {
+                    "id": 83,
+                    "value": "Pediatra"
+                  },
+                  {
+                    "id": 84,
+                    "value": "Ingeniero Agronomo"
+                  },
+                  {
+                    "id": 85,
+                    "value": "Electricista"
+                  },
+                  {
+                    "id": 86,
+                    "value": "Pastor Evangelico"
+                  },
+                  {
+                    "id": 87,
+                    "value": "Ofic Del Ejercito"
+                  },
+                  {
+                    "id": 88,
+                    "value": "Admon En Recursos Humanos"
+                  },
+                  {
+                    "id": 89,
+                    "value": "Lic En Sistemas"
+                  },
+                  {
+                    "id": 90,
+                    "value": "Lic En Ciencias Politicas"
+                  },
+                  {
+                    "id": 91,
+                    "value": "Quimico Biologo"
+                  },
+                  {
+                    "id": 92,
+                    "value": "Lic. Quimico Farmaceutico"
+                  },
+                  {
+                    "id": 93,
+                    "value": "Vicepresidente De Operaciones"
+                  },
+                  {
+                    "id": 94,
+                    "value": "Licenciado"
+                  },
+                  {
+                    "id": 95,
+                    "value": "Técnico"
+                  },
+                  {
+                    "id": 96,
+                    "value": "Empresario"
+                  },
+                  {
+                    "id": 97,
+                    "value": "Auxiliar"
+                  },
+                  {
+                    "id": 98,
+                    "value": "Promotor De Ventas"
+                  }
+                ],
+                "parentId": "",
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu profesión u oficio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                }
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu profesión u oficio",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu profesión u oficio",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextFieldActualRol",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 100,
+              "minLength": 5,
+              "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{5,}$",
+                  "text": "Mínimo de 5 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,100}$",
+                  "text": "Máximo de 100 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. enfermero/a",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Puesto actual",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "phoneNumberTextField",
+              "isEnable": true,
+              "keyboardType": "PHONE",
+              "maxLength": 12,
+              "minLength": 8,
+              "regex": "^([3-5]{1})[0-9]*?$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^[345][0-9]*?$",
+                  "text": "Formato de número inválido."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: +502 55909022",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textAlignment": "center",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Número de teléfono",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "phoneNumberTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextFieldAddress",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 100,
+              "minLength": 5,
+              "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{5,}$",
+                  "text": "Mínimo de 5 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,100}$",
+                  "text": "Máximo de 100 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. Calle 4 Casa #23",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Dirección",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextFieldZone",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 2,
+              "minLength": 1,
+              "regex": "^[0-9]+$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{1,}$",
+                  "text": "Mínimo de 1 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,2}$",
+                  "text": "Máximo de 2 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "Ingresa el número de tu zona",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Zona",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPickerDepartment",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Guatemala"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Escuintla"
+                  },
+                  {
+                    "id": 3,
+                    "value": "San Marcos"
+                  }
+                ],
+                "parentId": "",
+                "searchText": {
+                  "meta": {
+                    "text": "Buscar departamento",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "Presiona para buscar",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "normal"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "url": "/api/address/v3/departments"
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu departamento",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu departamento",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            },
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPickerState",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Guatemala"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Villa Nueva"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Mixco"
+                  }
+                ],
+                "parentId": "",
+                "searchText": {
+                  "meta": {
+                    "text": "Buscar municipio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "bold"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "Presiona para buscar",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "normal"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "url": "/api/address/v3/municipalities"
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu municipio",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu municipio",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos laborales.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Laborales",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "id": "interactiveTextFieldSelector",
+              "interactiveSelector": {
+                "hasSingleSelection": false,
+                "items": [
+                  {
+                    "icon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                    "id": "dependRelationship",
+                    "isEnabled": true,
+                    "isSelected": false,
+                    "label": {
+                      "meta": {
+                        "secondaryText": "",
+                        "secondaryTextColor": "#000000",
+                        "text": "Relación de dependencia",
+                        "textAlignment": "center",
+                        "textColor": "#000000",
+                        "textSize": 10,
+                        "weightFont": "bold"
+                      }
+                    }
+                  },
+                  {
+                    "icon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                    "id": "ownBusiness",
+                    "interactiveTextField": {
+                      "bottomSheet": {
+                        "content": [
+                          {
+                            "description": {
+                              "meta": {
+                                "text": "Establecimiento comercial, que tiene como objetivo satisfacer las necesidades...",
+                                "textAlignment": "right",
+                                "textColor": "#003865",
+                                "textSize": 16,
+                                "weightFont": "normal"
+                              }
+                            }
+                          }
+                        ],
+                        "title": {
+                          "meta": {
+                            "text": "Negocio propio",
+                            "textAlignment": "left",
+                            "textColor": "#003865",
+                            "textSize": 16,
+                            "weightFont": "bold"
+                          }
+                        }
+                      },
+                      "errorLabel": {
+                        "meta": {
+                          "text": "",
+                          "textColor": "#c6c6c6",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        }
+                      },
+                      "id": "businessNameTextField",
+                      "isEnable": true,
+                      "keyboardType": "alphanumeric",
+                      "maxLength": 50,
+                      "minLength": 5,
+                      "required": true,
+                      "singleValidation": [
+                        {
+                          "id": "errorRegex",
+                          "regexInline": "[a-zA-Z0-9_-]",
+                          "text": "Revisa tu información en este campo."
+                        },
+                        {
+                          "id": "emptyError",
+                          "text": "No olvides llenar este campo."
+                        }
+                      ],
+                      "textField": {
+                        "meta": {
+                          "text": "",
+                          "textColor": "#000000",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        },
+                        "placeHolder": {
+                          "meta": {
+                            "text": "ej. Nombre comercial",
+                            "textColor": "#c6c6c6",
+                            "textSize": 10,
+                            "weightFont": "regular"
+                          }
+                        }
+                      },
+                      "title": {
+                        "meta": {
+                          "text": "Negocio propio",
+                          "textColor": "#c6c6c6",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        }
+                      },
+                      "type": "interactiveTextField"
+                    },
+                    "isEnabled": true,
+                    "isSelected": false,
+                    "label": {
+                      "meta": {
+                        "secondaryText": "demora de 3 a 5 minutos.",
+                        "secondaryTextColor": "#000000",
+                        "text": "Negocio propio",
+                        "textAlignment": "center",
+                        "textColor": "#000000",
+                        "textSize": 10,
+                        "weightFont": "bold"
+                      }
+                    }
+                  },
+                  {
+                    "icon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                    "id": "otherSources",
+                    "interactiveTextField": {
+                      "bottomSheet": {
+                        "content": [
+                          {
+                            "description": {
+                              "meta": {
+                                "text": "Cualquier fuente de ingreso o beneficio económico...",
+                                "textAlignment": "right",
+                                "textColor": "#003865",
+                                "textSize": 16,
+                                "weightFont": "normal"
+                              }
+                            }
+                          }
+                        ],
+                        "title": {
+                          "meta": {
+                            "text": "Otras fuentes",
+                            "textAlignment": "left",
+                            "textColor": "#003865",
+                            "textSize": 16,
+                            "weightFont": "bold"
+                          }
+                        }
+                      },
+                      "errorLabel": {
+                        "meta": {
+                          "text": "",
+                          "textColor": "#c6c6c6",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        }
+                      },
+                      "id": "otherSourcesTextField",
+                      "isEnable": true,
+                      "keyboardType": "alphanumeric",
+                      "maxLength": 50,
+                      "minLength": 5,
+                      "required": true,
+                      "singleValidation": [
+                        {
+                          "id": "errorRegex",
+                          "regexInline": "[a-zA-Z0-9_-]",
+                          "text": "Revisa tu información en este campo."
+                        },
+                        {
+                          "id": "emptyError",
+                          "text": "No olvides llenar este campo."
+                        }
+                      ],
+                      "textField": {
+                        "meta": {
+                          "text": "",
+                          "textColor": "#000000",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        },
+                        "placeHolder": {
+                          "meta": {
+                            "text": "ej. Renta, actividades profesionales, etc",
+                            "textColor": "#c6c6c6",
+                            "textSize": 10,
+                            "weightFont": "regular"
+                          }
+                        }
+                      },
+                      "title": {
+                        "meta": {
+                          "text": "Otras fuentes",
+                          "textColor": "#c6c6c6",
+                          "textSize": 10,
+                          "weightFont": "regular"
+                        }
+                      },
+                      "type": "interactiveTextField"
+                    },
+                    "isEnabled": true,
+                    "isSelected": false,
+                    "label": {
+                      "meta": {
+                        "secondaryText": "demora de 3 a 5 minutos.",
+                        "secondaryTextColor": "#000000",
+                        "text": "Otras fuentes",
+                        "textAlignment": "center",
+                        "textColor": "#000000",
+                        "textSize": 10,
+                        "weightFont": "bold"
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "interactiveTextFieldSelector"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos de ingresos adicionales.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "Son todos aquellos ingresos que obtiene una persona para generar dinero o recursos económicos.",
+                "textAlignment": "left",
+                "textColor": "#004D55",
+                "textSize": 12,
+                "weightFont": "regular"
+              }
+            }
+          },
+          "isCollapsed": true,
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "Si aplica, elige una o dos opciones",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Presiona el botón de ayuda para conocer más",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "title": {
+            "meta": {
+              "text": "Ingresos adicionales",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextField",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 100,
+              "minLength": 5,
+              "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{5,}$",
+                  "text": "Mínimo de 5 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,100}$",
+                  "text": "Máximo de 100 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. Jose Manuel Pérez López",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Nombre completo",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "id": "listPicker",
+              "isEnable": true,
+              "leftIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "listPicker": {
+                "childId": "",
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Padre"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Madre"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Hermano/a"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Conyuge"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Hijo/a"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Otro"
+                  },
+                  {
+                    "id": 7,
+                    "value": "No existe parentesco"
+                  }
+                ],
+                "parentId": "",
+                "title": {
+                  "meta": {
+                    "text": "Selecciona el parentesco",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                }
+              },
+              "required": true,
+              "rightIcon": {
+                "icon": {
+                  "activeTintColor": "#1EC771",
+                  "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media&token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                  "defaultTintColor": "#00C1D4",
+                  "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media&token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                  "inactiveTintColor": "#F13852"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar el parentesco",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona el parentesco",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "bold"
+                }
+              },
+              "type": "listPicker"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa los datos del beneficiario.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Beneficiario",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      },
+      {
+        "componentCard": {
+          "components": [
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "interactiveTextField",
+              "isEnable": true,
+              "keyboardType": "ALPHA",
+              "maxLength": 100,
+              "minLength": 5,
+              "regex": "^([a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\s ]+)$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorMinLength",
+                  "regexInline": "^.{5,}$",
+                  "text": "Mínimo de 5 caracteres"
+                },
+                {
+                  "id": "errorMaxLength",
+                  "regexInline": "^.{0,100}$",
+                  "text": "Máximo de 100 caracteres"
+                },
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^([a-zA-Z0-9 ]+)$",
+                  "text": "Revisa tu información en este campo."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. Sofía Lucía Garcia Godoy",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Nombre completo",
+                  "textColor": "#003865",
+                  "textSize": 14,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "interactiveTextField"
+            },
+            {
+              "errorLabel": {
+                "meta": {
+                  "textColor": "#F13852",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "id": "phoneNumberTextField",
+              "isEnable": true,
+              "keyboardType": "PHONE",
+              "maxLength": 12,
+              "minLength": 8,
+              "regex": "^([3-5]{1})[0-9]*?$",
+              "required": true,
+              "singleValidation": [
+                {
+                  "id": "errorRegex",
+                  "regexInline": "^[345][0-9]*?$",
+                  "text": "Formato de número inválido."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "regular"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: +502 55909022",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                },
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textAlignment": "center",
+                    "textColor": "#829DB4",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Número de teléfono",
+                  "textColor": "#003865",
+                  "textSize": 12,
+                  "weightFont": "regular"
+                }
+              },
+              "type": "phoneNumberTextField"
+            }
+          ],
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa los datos de tu referencia personal.",
+              "textAlignment": "left",
+              "textColor": "#004D55",
+              "textSize": 12,
+              "weightFont": "regular"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          },
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Referencia Personal",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "id": "interactiveComponentCard",
+        "type": "interactiveComponentCard"
+      }
+    ],
+    "footer": [
+      {
+        "action": {
+          "destination": "consumer_credits/v1/page/complete_your_data",
+          "type": "navigate"
+        },
+        "alwaysActive": false,
+        "borderColor": null,
+        "disableBackgroundColor": "#9EA2A2",
+        "enableBackgroundColor": "#003865",
+        "id": "Continuar",
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textAlignment": "center",
+            "textColor": "#FFFFFF",
+            "textSize": 16,
+            "weightFont": "bold"
+          }
+        },
+        "type": "button"
+      }
+    ]
+  }
+}

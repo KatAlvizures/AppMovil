@@ -1,0 +1,238 @@
+{
+  "info": {},
+  "data": {
+    "id": "test_container_expandable",
+    "title": "Solicita tu crédito",
+    "body": [
+      {
+        "id": "progressbar",
+        "progressbar": {
+          "meta": {
+            "barBackgroundColor": "#D9F6F9",
+            "barColor": "#00C1D4",
+            "step": 4,
+            "totalSteps": 5
+          },
+          "title": {
+            "meta": {
+              "text": "¡Completa tus datos!",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "required": false,
+        "type": "progressbar"
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Ingresa o edita la información necesaria",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 12,
+            "weightFont": "normal"
+          }
+        },
+        "required": false,
+        "type": "label"
+      },
+      {
+        "type": "interactiveTextFieldsCard",
+        "id": "interactiveTextFieldsCard",
+        "required": true,
+        "isEnable": true,
+        "expandableCard": {
+          "icon": {
+            "meta": {
+              "icon": "http://icon.com"
+            }
+          },
+          "title": {
+            "meta": {
+              "text": "Asigna un beneficiario para tu cuenta",
+              "textSize": 12,
+              "weightFont": "bold",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "successTitle": {
+            "meta": {
+              "text": "¡Todo listo!",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Presional el botón de ayuda para conocer más.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "Presiona para llenar los datos",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "successSubtitle": {
+            "meta": {
+              "text": "Presiona para ver tu beneficiario",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa los datos de tu beneficiario",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "Esta una larga descripción para colocar información...",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "optionsEditText": [
+            {
+              "interactiveTextField": {
+                "id": "name",
+                "title": {
+                  "meta": {
+                    "text": "Nombre del beneficiario",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. José",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "value": "",
+                "minLength": 5,
+                "maxLength": 25
+              }
+            },
+            {
+              "interactiveTextField": {
+                "id": "lastName",
+                "title": {
+                  "meta": {
+                    "text": "Apellido del beneficiario",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Martinez",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "value": "",
+                "minLength": 5,
+                "maxLength": 25
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "footer": [
+      {
+        "type": "button",
+        "id": "button",
+        "action": {
+          "destination": "",
+          "type": "navigate"
+        },
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textSize": 16,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#ffffff"
+          }
+        },
+        "alwaysActive": false,
+        "enableBackgroundColor": "#003865",
+        "disableBackgroundColor": "#9EA2A2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "type": "page",
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "Datos de tu remesa",
+            "textSize": 22,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#003865"
+          }
+        }
+      },
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "Necesitamos la siguiente información",
+            "textSize": 16,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#3E729C"
+          }
+        }
+      },
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "Número de remesa",
+            "textSize": 10,
+            "weightFont": "bold",
+            "textAlignment": "left",
+            "textColor": "#3E729C"
+          }
+        }
+      },
+      {
+        "type": "textField",
+        "id": "textField",
+        "required": true,
+        "isEnable":true,
+        "textField": {
+          "meta": {
+            "text": "",
+            "textSize": 12,
+            "weightFont": "regular",
+            "textColor": "#000000"
+          },
+          "placeHolder": {
+            "meta": {
+              "text": "ej. 96720008090",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          }
+        },
+        "minLength":5,
+        "maxLength":15,
+        "keyboardType":"numeric",
+        "regex":"^[0-9]*$",
+        "regexInline":"^[0-9]*$"
+      },
+      {
+        "type": "interactiveTextField",
+        "id": "interactiveTextField",
+        "required": true,
+        "isEnable":true,
+        "title": {
+          "meta": {
+            "text": "Tu correo electrónico",
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          }
+        },
+        "textField": {
+          "meta": {
+            "text": "",
+            "textSize": 16,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          },
+          "placeHolder": {
+            "meta": {
+              "text": "ej. juanjose@correo.com",
+              "textSize": 16,
+              "weightFont": "regular",
+              "textColor": "#829DB4"
+            }
+          }
+        },
+        "errorLabel": {
+          "meta": {
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#F13852"
+          }
+        },
+        "validationErrors": [
+          {
+            "id": "errorRegex",
+            "text": "Revisa tu información en este campo.",
+            "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+          },
+          {
+            "id": "emptyError",
+            "text": "No olvides llenar este campo."
+          }
+        ],
+        "minLength":5,
+        "maxLength":15,
+        "keyboardType":"email",
+        "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+      },
+      {
+        "type": "interactiveDateTextField",
+        "id": "interactiveDateTextField",
+        "required": true,
+        "isEnable":true,
+        "title": {
+          "meta": {
+            "text": "Fecha de vencimiento de DPI",
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          }
+        },
+        "textField": {
+          "meta": {
+            "text": "",
+            "textSize": 16,
+            "weightFont": "regular",
+            "textColor": "#003865"
+          },
+          "placeHolder": {
+            "meta": {
+              "text": "ej. 12/05/2020",
+              "textSize": 16,
+              "weightFont": "regular",
+              "textColor": "#829DB4"
+            }
+          }
+        },
+        "iconRight": {
+          "meta": {
+            "type": "url",
+            "icon": "http://icon.com"
+          }
+        },
+        "errorLabel": {
+          "meta": {
+            "textSize": 14,
+            "weightFont": "regular",
+            "textColor": "#F13852"
+          }
+        },
+        "validationErrors": [
+          {
+            "id": "errorRegex",
+            "text": "Revisa tu información en este campo.",
+            "regexInline":"[a-zA-Z0-9_-]"
+          },
+          {
+            "id": "emptyError",
+            "text": "No olvides llenar este campo."
+          }
+        ],
+        "minDate": 1704138654,
+        "maxDate": 1706298654,
+        "dateFormat": "dd/MM/yyyy",
+        "minLength":0,
+        "maxLength":10,
+        "keyboardType":"date",
+        "regex":"^(0?[1-9]|[12][0-9]|3[01])[\\/\\-](0?[1-9]|1[012])[\\/\\-]\\d{4}$"
+      },
+      {
+        "type": "interactiveDPICard",
+        "id": "interactiveDPICard",
+        "required": true,
+        "isEnable": true,
+        "expandableCard": {
+          "icon": {
+            "meta": {
+              "icon": "http://icon.com"
+            }
+          },
+          "title": {
+            "meta": {
+              "text": "Ingresa tu Identificación",
+              "textSize": 14,
+              "weightFont": "bold",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Puedes escribir tu número de DPI o tomar una fotografía de ambos lados en un lugar iluminado",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "Presiona registrar tu DPI",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "helpIcon": {
+            "meta": {
+              "icon": "http://icon.com"
+            },
+            "bottomSheet": {
+              "content": [
+                {
+                  "title": {
+                    "meta": {
+                      "text": "Gastos administrativos y legales:",
+                      "textSize": 16,
+                      "weightFont": "bold",
+                      "textAlignment": "left",
+                      "textColor": "#000000"
+                    }
+                  },
+                  "description": {
+                    "meta": {
+                      "text": "Costos asociados en el proceso de legalización y generación de tu crédito.",
+                      "textSize": 16,
+                      "weightFont": "normal",
+                      "textAlignment": "right",
+                      "textColor": "#000000"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "interactiveTextField": {
+            "title": {
+              "meta": {
+                "text": "Número de DPI",
+                "textSize": 14,
+                "weightFont": "regular",
+                "textColor": "#003865"
+              }
+            },
+            "textField": {
+              "meta": {
+                "text": "",
+                "textSize": 16,
+                "weightFont": "regular",
+                "textColor": "#003865"
+              },
+              "placeHolder": {
+                "meta": {
+                  "text": "ej. 3050824830116",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#829DB4"
+                }
+              },
+              "icon": {
+                "meta": {
+                  "icon": "http://icon.com"
+                }
+              }
+            },
+            "errorLabel": {
+              "meta": {
+                "textSize": 14,
+                "weightFont": "regular",
+                "textColor": "#F13852"
+              }
+            },
+            "validationErrors": [
+              {
+                "id": "errorRegex",
+                "text": "Revisa la numeración de tu DPI.",
+                "regexInline":"^[0-9]*$"
+              },
+              {
+                "id": "emptyError",
+                "text": "No olvides llenar este campo."
+              }
+            ],
+            "minLength": 5,
+            "maxLength": 14,
+            "keyboardType": "numeric",
+            "regex": "^[0-9]*$"
+          },
+          "preview1": {
+            "placeHolder": {
+              "icon": "http://icon.com"
+            }
+          },
+          "preview2": {
+            "placeHolder": {
+              "icon": "http://icon.com"
+            }
+          }
+        },
+        "value": ""
+      },
+      {
+        "type": "interactiveSelfieCard",
+        "id": "interactiveSelfieCard",
+        "required": true,
+        "isEnable": true,
+        "expandableCard": {
+          "iconLeft": {
+            "meta": {
+              "icon": "http://icon.com"
+            }
+          },
+          "title": {
+            "meta": {
+              "text": "Tómate una Selfie",
+              "textSize": 14,
+              "weightFont": "bold",
+              "textColor": "#003865"
+            }
+          },
+          "subtitle": {
+            "meta": {
+              "text": "Presiona el botón para repetir",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "icon": {
+            "meta": {
+              "icon": "http://icon.com"
+            }
+          },
+          "preview": {
+            "placeHolder": {
+              "icon": "http://icon.com"
+            }
+          },
+          "description": {
+            "meta": {
+              "text": "Ubícate en un lugar iluminado, con un fondo claro que permita ver tu rostro",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#003865",
+              "textAlignment": "center"
+            }
+          }
+        },
+        "value": ""
+      },
+      {
+        "type": "statusChip",
+        "id": "statusChip",
+        "required": true,
+        "isEnable": true,
+        "statusChip": {
+          "text": "Aprobado",
+          "color": "#BBF7DC",
+          "dotColor": "#41BB72"
+        }
+      },
+      {
+        "type": "checkbox",
+        "id": "checkbox",
+        "required": true,
+        "title": {
+          "meta": {
+            "text": "Acepto los términos y condiciones",
+            "textSize": 10,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#0000ff"
+          }
+        },
+        "selectedValue": true,
+        "defaultValue": false,
+        "isEnabled": false
+      }
+    ],
+    "footer": []
+  }
+}

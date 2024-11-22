@@ -1,0 +1,175 @@
+{
+  "type": "page",
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "¿Dónde vives?",
+            "textSize": 22,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#003865"
+          }
+        }
+      },
+      {
+        "type": "label",
+        "id": "label",
+        "required": true,
+        "label": {
+          "meta": {
+            "text": "Necesitamos conocer tu dirección",
+            "textSize": 16,
+            "weightFont": "normal",
+            "textAlignment": "center",
+            "textColor": "#3E729C"
+          }
+        }
+      },
+      {
+        "type": "listPicker",
+        "id": "listPicker",
+        "required": true,
+        "isEnable": true,
+        "listPicker": {
+          "parentId": "parentId",
+          "childId": "childId",
+          "url": "/api/address/v3/departments",
+          "items": [
+            {
+              "id": 1,
+              "value": "Guatemala"
+            },
+            {
+              "id": 2,
+              "value": "Escuintla"
+            },
+            {
+              "id": 3,
+              "value": "San Marcos"
+            },
+            {
+              "id": 4,
+              "value": "Baja Verapaz"
+            },
+            {
+              "id": 5,
+              "value": "Alta Verapaz"
+            },
+            {
+              "id": 6,
+              "value": "El Progreso"
+            },
+            {
+              "id": 7,
+              "value": "Izabal"
+            },
+            {
+              "id": 8,
+              "value": "Chiquimula"
+            },
+            {
+              "id": 9,
+              "value": "Zacapa"
+            },
+            {
+              "id": 10,
+              "value": "Santa Rosa"
+            },
+            {
+              "id": 11,
+              "value": "Jalapa"
+            },
+            {
+              "id": 12,
+              "value": "Jutiapa"
+            }
+          ],
+          "searchText": {
+            "meta": {
+              "text": "Buscar departamento",
+              "textSize": 12,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#000000"
+            },
+            "placeHolder": {
+              "meta": {
+                "text": "Presiona para buscar",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          }
+        },
+        "title": {
+          "meta": {
+            "text": "Selecciona tu departamento",
+            "textSize": 14,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#003865"
+          }
+        },
+        "subTitle": {
+          "meta": {
+            "text": "Presiona para continuar",
+            "textSize": 12,
+            "weightFont": "regular",
+            "textAlignment": "center",
+            "textColor": "#003865"
+          }
+        },
+        "selectedText": {
+          "meta": {
+            "text": "Presiona para cambiar tu departamento",
+            "textSize": 12,
+            "weightFont": "regular",
+            "textAlignment": "center",
+            "textColor": "#003865"
+          }
+        },
+        "errorText": {
+          "meta": {
+            "text": "No olvides seleccionar una opción",
+            "textSize": 10,
+            "weightFont": "bold",
+            "textAlignment": "center",
+            "textColor": "#000000"
+          }
+        },
+        "leftIcon": {
+          "icon": {
+            "defaultTintColor": "#BBF7DC",
+            "inactiveTintColor": "#BBF7DC",
+            "activeTintColor": "#BBF7DC",
+            "defaultIcon": "http://icon.com",
+            "inactiveIcon": "",
+            "activeIcon": ""
+          }
+        },
+        "rightIcon": {
+          "icon": {
+            "defaultTintColor": "#BBF7DC",
+            "inactiveTintColor": "#BBF7DC",
+            "activeTintColor": "#BBF7DC",
+            "defaultIcon": "http://icon.com",
+            "inactiveIcon": "http://icon.com",
+            "activeIcon": "http://icon.com"
+          }
+        },
+        "selectedValue": {
+          "id": 1,
+          "value": "Guatemala"
+        }
+      }
+    ],
+    "footer": []
+  }
+}

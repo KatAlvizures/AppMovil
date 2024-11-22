@@ -1,0 +1,1797 @@
+{
+  "info": {},
+  "data": {
+    "id": "test_container_expandable",
+    "title": "Solicita tu crédito",
+    "body": [
+      {
+        "id": "progressbar",
+        "progressbar": {
+          "meta": {
+            "barBackgroundColor": "#D9F6F9",
+            "barColor": "#00C1D4",
+            "step": 4,
+            "totalSteps": 5
+          },
+          "title": {
+            "meta": {
+              "text": "¡Completa tus datos!",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "required": false,
+        "type": "progressbar"
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Ingresa o edita la información necesaria",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 10,
+            "weightFont": "bold"
+          }
+        },
+        "required": true,
+        "type": "label"
+      },
+      {
+        "id": "interactiveSectionsCard",
+        "sections": [
+          {
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "/api/address/v3/departments",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona tu departamento",
+                      "textSize": 10,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    }
+                  },
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Guatemala"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Escuintla"
+                    },
+                    {
+                      "id": 3,
+                      "value": "San Marcos"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 10,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  },
+                  "selectedValue": {
+                    "id": 1,
+                    "value": "Guatemala"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu departamento",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                }
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 50,
+                "minLength": 5,
+                "regex": "^(0?|1?\\d|20)$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Menos de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,50}$",
+                    "text": "Menos de 50 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField",
+                "parentId": "1"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Personales",
+            "id": "1"
+          },
+          {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 1,
+                "regex": "^(0?|1?\\d|20)$[a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\]\\[\\-\\s]{5,100}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Menos de 100 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Calle 4 Casa #23",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Dirección",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 2,
+                "minLength": 1,
+                "regex": "^[0-9]+$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,2}$",
+                    "text": "Menos de 2 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "Ingresa el número de tu zona",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Zona",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "defaultValue": false,
+                "id": "checkbox",
+                "isEnabled": false,
+                "required": true,
+                "selectedValue": false,
+                "title": {
+                  "meta": {
+                    "text": "Declaro que los fondos que utilizo para el pago mensual del producto son propios y que mi dirección es verídica.",
+                    "textAlignment": "center",
+                    "textColor": "#000000",
+                    "textSize": 10,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "checkbox"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Domicilio"
+          },
+          {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "phoneNumberTextField",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 12,
+                "minLength": 8,
+                "regex": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 50,
+                "minLength": 5,
+                "regex": "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Menos de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,50}$",
+                    "text": "Menos de 50 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. juanjose@correo.com",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Tu correo electrónico",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Contacto"
+          },
+          {
+            "components": [
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "listPicker",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Ninguna"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Abogado"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Administrador"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Arquitecto"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Cont Publ Auditor"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Economista"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Ingeniero"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Medico"
+                    },
+                    {
+                      "id": 9,
+                      "value": "Ingeniero Quimico"
+                    },
+                    {
+                      "id": 10,
+                      "value": "Psicologo"
+                    },
+                    {
+                      "id": 11,
+                      "value": "Humanista"
+                    },
+                    {
+                      "id": 12,
+                      "value": "Bachiller"
+                    },
+                    {
+                      "id": 13,
+                      "value": "Maestro"
+                    },
+                    {
+                      "id": 14,
+                      "value": "Militar"
+                    },
+                    {
+                      "id": 15,
+                      "value": "Perito Contador"
+                    },
+                    {
+                      "id": 16,
+                      "value": "Programador"
+                    },
+                    {
+                      "id": 17,
+                      "value": "Secretaria"
+                    },
+                    {
+                      "id": 18,
+                      "value": "Analista"
+                    },
+                    {
+                      "id": 19,
+                      "value": "Estudiante"
+                    },
+                    {
+                      "id": 20,
+                      "value": "Catedrático/a"
+                    },
+                    {
+                      "id": 21,
+                      "value": "Otros"
+                    },
+                    {
+                      "id": 22,
+                      "value": "Lic. Informatica"
+                    },
+                    {
+                      "id": 23,
+                      "value": "Mecanico Automotriz"
+                    },
+                    {
+                      "id": 24,
+                      "value": "Mecanico Industrial"
+                    },
+                    {
+                      "id": 25,
+                      "value": "Ing. Agronomo"
+                    },
+                    {
+                      "id": 26,
+                      "value": "Enfermero/A"
+                    },
+                    {
+                      "id": 27,
+                      "value": "Cosmetologa"
+                    },
+                    {
+                      "id": 28,
+                      "value": "Estilista"
+                    },
+                    {
+                      "id": 29,
+                      "value": "Veterinario"
+                    },
+                    {
+                      "id": 30,
+                      "value": "Zootecnista"
+                    },
+                    {
+                      "id": 31,
+                      "value": "Tipografo"
+                    },
+                    {
+                      "id": 32,
+                      "value": "Dentista"
+                    },
+                    {
+                      "id": 33,
+                      "value": "Aviador"
+                    },
+                    {
+                      "id": 34,
+                      "value": "Litografo"
+                    },
+                    {
+                      "id": 35,
+                      "value": "Lic. Pedagogia"
+                    },
+                    {
+                      "id": 36,
+                      "value": "Dibujante"
+                    },
+                    {
+                      "id": 37,
+                      "value": "Radiotecnico"
+                    },
+                    {
+                      "id": 38,
+                      "value": "Antropologo/A"
+                    },
+                    {
+                      "id": 39,
+                      "value": "Perito Mercadotecnia"
+                    },
+                    {
+                      "id": 40,
+                      "value": "Visitador Medico"
+                    },
+                    {
+                      "id": 41,
+                      "value": "Auditor"
+                    },
+                    {
+                      "id": 42,
+                      "value": "Piloto Automotriz"
+                    },
+                    {
+                      "id": 43,
+                      "value": "Farmaceutico/Ca"
+                    },
+                    {
+                      "id": 44,
+                      "value": "Editor"
+                    },
+                    {
+                      "id": 45,
+                      "value": "Publicista"
+                    },
+                    {
+                      "id": 46,
+                      "value": "Electromecanico"
+                    },
+                    {
+                      "id": 47,
+                      "value": "Periodista"
+                    },
+                    {
+                      "id": 48,
+                      "value": "Fisioterapista"
+                    },
+                    {
+                      "id": 49,
+                      "value": "Aeromosa"
+                    },
+                    {
+                      "id": 50,
+                      "value": "Perito Agronomo"
+                    },
+                    {
+                      "id": 51,
+                      "value": "Ortodoncista"
+                    },
+                    {
+                      "id": 52,
+                      "value": "Lic. En Ccss De La Comunicacion"
+                    },
+                    {
+                      "id": 53,
+                      "value": "Sacerdote"
+                    },
+                    {
+                      "id": 54,
+                      "value": "Nutriologo"
+                    },
+                    {
+                      "id": 55,
+                      "value": "Diseñador Grafico"
+                    },
+                    {
+                      "id": 56,
+                      "value": "Lic En Mercadeo"
+                    },
+                    {
+                      "id": 57,
+                      "value": "Sociologo"
+                    },
+                    {
+                      "id": 58,
+                      "value": "Trabaj Social"
+                    },
+                    {
+                      "id": 59,
+                      "value": "Biólogo"
+                    },
+                    {
+                      "id": 60,
+                      "value": "Arqueologo"
+                    },
+                    {
+                      "id": 61,
+                      "value": "Dermatologo"
+                    },
+                    {
+                      "id": 62,
+                      "value": "Topografo"
+                    },
+                    {
+                      "id": 63,
+                      "value": "Perito En Computacion"
+                    },
+                    {
+                      "id": 64,
+                      "value": "Contralor"
+                    },
+                    {
+                      "id": 65,
+                      "value": "Perito Electronica"
+                    },
+                    {
+                      "id": 66,
+                      "value": "Futbolista Prof"
+                    },
+                    {
+                      "id": 67,
+                      "value": "Fotografo Prof"
+                    },
+                    {
+                      "id": 68,
+                      "value": "Músico Filarmonico"
+                    },
+                    {
+                      "id": 69,
+                      "value": "Asesor Seguros"
+                    },
+                    {
+                      "id": 70,
+                      "value": "Perito Admon Public"
+                    },
+                    {
+                      "id": 71,
+                      "value": "Psiquiatra"
+                    },
+                    {
+                      "id": 72,
+                      "value": "Paramedico"
+                    },
+                    {
+                      "id": 73,
+                      "value": "Perito Admon Emp"
+                    },
+                    {
+                      "id": 74,
+                      "value": "Perito Forestal"
+                    },
+                    {
+                      "id": 75,
+                      "value": "Agricultor"
+                    },
+                    {
+                      "id": 76,
+                      "value": "Comerciante"
+                    },
+                    {
+                      "id": 77,
+                      "value": "Terapeuta"
+                    },
+                    {
+                      "id": 78,
+                      "value": "Mercadologo/A"
+                    },
+                    {
+                      "id": 79,
+                      "value": "Perito En Construccion"
+                    },
+                    {
+                      "id": 80,
+                      "value": "Oficinista"
+                    },
+                    {
+                      "id": 81,
+                      "value": "Bibliotecologa"
+                    },
+                    {
+                      "id": 82,
+                      "value": "Jornalero"
+                    },
+                    {
+                      "id": 83,
+                      "value": "Pediatra"
+                    },
+                    {
+                      "id": 84,
+                      "value": "Ingeniero Agronomo"
+                    },
+                    {
+                      "id": 85,
+                      "value": "Electricista"
+                    },
+                    {
+                      "id": 86,
+                      "value": "Pastor Evangelico"
+                    },
+                    {
+                      "id": 87,
+                      "value": "Ofic Del Ejercito"
+                    },
+                    {
+                      "id": 88,
+                      "value": "Admon En Recursos Humanos"
+                    },
+                    {
+                      "id": 89,
+                      "value": "Lic En Sistemas"
+                    },
+                    {
+                      "id": 90,
+                      "value": "Lic En Ciencias Politicas"
+                    },
+                    {
+                      "id": 91,
+                      "value": "Quimico Biologo"
+                    },
+                    {
+                      "id": 92,
+                      "value": "Lic. Quimico Farmaceutico"
+                    },
+                    {
+                      "id": 93,
+                      "value": "Vicepresidente De Operaciones"
+                    },
+                    {
+                      "id": 94,
+                      "value": "Licenciado"
+                    },
+                    {
+                      "id": 95,
+                      "value": "Técnico"
+                    },
+                    {
+                      "id": 96,
+                      "value": "Empresario"
+                    },
+                    {
+                      "id": 97,
+                      "value": "Auxiliar"
+                    },
+                    {
+                      "id": 98,
+                      "value": "Promotor De Ventas"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona tu profesión u oficio",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu profesión u oficio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu profesión u oficio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 50,
+                "minLength": 5,
+                "regex": "^(0?|1?\\d|20)$[a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\]\\[\\-\\s]{5,100}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{5,}$",
+                    "text": "Menos de 5 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,50}$",
+                    "text": "Menos de 50 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. enfermero/a",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Puesto actual",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "phoneNumberTextField",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 12,
+                "minLength": 8,
+                "regex": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 1,
+                "regex": "^(0?|1?\\d|20)$[a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\]\\[\\-\\s]{5,100}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Menos de 100 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Calle 4 Casa #23",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Dirección",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 2,
+                "minLength": 1,
+                "regex": "^[0-9]+$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,2}$",
+                    "text": "Menos de 2 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "Ingresa el número de tu zona",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Zona",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "listPicker",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Guatemala"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Escuintla"
+                    },
+                    {
+                      "id": 3,
+                      "value": "San Marcos"
+                    }
+                  ],
+                  "parentId": "",
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textColor": "#829DB4",
+                        "textSize": 16,
+                        "weightFont": "normal"
+                      }
+                    }
+                  },
+                  "title": {
+                    "meta": {
+                      "text": "",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  },
+                  "url": "/api/address/v3/departments"
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu departamento",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "listPicker",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Guatemala"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Villa Nueva"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Mixco"
+                    }
+                  ],
+                  "parentId": "",
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar municipio",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 16,
+                      "weightFont": "bold"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textColor": "#829DB4",
+                        "textSize": 16,
+                        "weightFont": "normal"
+                      }
+                    }
+                  },
+                  "title": {
+                    "meta": {
+                      "text": "",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  },
+                  "url": "/api/address/v3/municipalities"
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu municipio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu municipio",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Laborales"
+          },
+          {
+            "components": [],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "Si aplica, elige una o dos opciones",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Ingresos adicionales"
+          },
+          {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 1,
+                "regex": "^(0?|1?\\d|20)$[a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\]\\[\\-\\s]{5,100}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Menos de 100 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Jose Manuel Pérez López",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Nombre completo",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textAlignment": "left",
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "id": "listPicker",
+                "isEnable": true,
+                "leftIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://img.icons8.com/windows/32/retro-alarm-clock.png",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "listPicker": {
+                  "childId": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Padre"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Madre"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Hermano/a"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Conyuge"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Hijo/a"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Otro"
+                    },
+                    {
+                      "id": 7,
+                      "value": "No existe parentesco"
+                    }
+                  ],
+                  "parentId": "",
+                  "title": {
+                    "meta": {
+                      "text": "Selecciona el parentesco",
+                      "textAlignment": "left",
+                      "textColor": "#003865",
+                      "textSize": 14,
+                      "weightFont": "bold"
+                    }
+                  }
+                },
+                "required": true,
+                "rightIcon": {
+                  "icon": {
+                    "activeTintColor": "#1EC771",
+                    "defaultIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorright.png?alt=media\u0026token=64a3a612-ca78-4f61-ad0f-cbb67b2f2a56",
+                    "defaultTintColor": "#00C1D4",
+                    "inactiveIcon": "https://firebasestorage.googleapis.com/v0/b/legendarios-tdg.appspot.com/o/assetscc%2FVectorerror.png?alt=media\u0026token=b7e6670f-238b-4202-9ef7-fea9cb527729",
+                    "inactiveTintColor": "#F13852"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar el parentesco",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "normal"
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona el parentesco",
+                    "textAlignment": "left",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "bold"
+                  }
+                },
+                "type": "listPicker"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Beneficiario"
+          },
+          {
+            "components": [
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "interactiveTextField",
+                "isEnable": true,
+                "keyboardType": "ALPHA",
+                "maxLength": 100,
+                "minLength": 1,
+                "regex": "^(0?|1?\\d|20)$[a-zA-Z0-9ñáéíóúÁÉÍÓÚÑ.,_^~|€%#{}()\\]\\[\\-\\s]{5,100}",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^([a-zA-Z0-9 ]+)$",
+                    "text": "Revisa tu información en este campo."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  },
+                  {
+                    "id": "errorMinLength",
+                    "regexInline": "^.{1,}$",
+                    "text": "Menos de 1 caracteres"
+                  },
+                  {
+                    "id": "errorMaxLength",
+                    "regexInline": "^.{0,100}$",
+                    "text": "Menos de 100 caracteres"
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. Sofía Lucía Garcia Godoy",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Nombre completo",
+                    "textColor": "#003865",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "interactiveTextField"
+              },
+              {
+                "errorLabel": {
+                  "meta": {
+                    "textColor": "#F13852",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "id": "phoneNumberTextField",
+                "isEnable": true,
+                "keyboardType": "PHONE",
+                "maxLength": 12,
+                "minLength": 8,
+                "regex": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                "required": true,
+                "singleValidation": [
+                  {
+                    "id": "errorRegex",
+                    "regexInline": "^(\\+502)?[ -]?[345][0-9]{7}$",
+                    "text": "Formato de número inválido."
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textColor": "#003865",
+                    "textSize": 16,
+                    "weightFont": "regular"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: +502 55909022",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  },
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textAlignment": "center",
+                      "textColor": "#829DB4",
+                      "textSize": 16,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textColor": "#003865",
+                    "textSize": 12,
+                    "weightFont": "regular"
+                  }
+                },
+                "type": "phoneNumberTextField"
+              }
+            ],
+            "errorSubtitle": "",
+            "errorTitle": "Algo salió mal...",
+            "required": true,
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "title": "Referencia Personal"
+          }
+        ],
+        "type": "interactiveSectionsCard"
+      }
+    ],
+    "footer": [
+      {
+        "action": {
+          "destination": "consumer_credits/v1/page/submit_payroll_prequalification",
+          "type": "navigate"
+        },
+        "disableBackgroundColor": "#829DB4",
+        "enableBackgroundColor": "#003865",
+        "id": "button",
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textAlignment": "center",
+            "textColor": "#ffffff",
+            "textSize": 14,
+            "weightFont": "bold"
+          }
+        },
+        "type": "button"
+      }
+    ]
+  }
+}

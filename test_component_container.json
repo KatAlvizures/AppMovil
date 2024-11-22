@@ -1,0 +1,1525 @@
+{
+  "info": {},
+  "data": {
+    "body": [
+      {
+        "type": "progressbar",
+        "id": "progressbar",
+        "required": true,
+        "progressbar": {
+          "meta": {
+            "step": 15,
+            "totalSteps": 100,
+            "barColor": "#00C1D4",
+            "barBackgroundColor": "#a1edf5"
+          },
+          "title": {
+            "meta": {
+              "text": "Completa tus datos",
+              "textSize": 24,
+              "weightFont": "bold",
+              "textAlignment": "center",
+              "textColor": "#003865"
+            }
+          }
+        }
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Ingresa la informaciòn necesaria",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 14,
+            "weightFont": "normal"
+          }
+        },
+        "required": true,
+        "type": "label"
+      },
+      {
+        "id": "interactiveSectionsCard",
+        "type": "interactiveSectionsCard",
+        "sections": [
+          {
+            "required": true,
+            "title": "Personales",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Sin estudios"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Educación Primaria (1ero a 3er grado)"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Educación Primaria (4to a 6to grado)"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Educación Básica"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Educación Diversificada"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Educación Universitaria y/o Técnico"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Maestría, Posgrado y/o Doctorado"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Chiquimula"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "¿Cual es tu nivel academico?",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Domicilio",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Sin estudios"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Educación Primaria (1ero a 3er grado)"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Educación Primaria (4to a 6to grado)"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Educación Básica"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Educación Diversificada"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Educación Universitaria y/o Técnico"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Maestría, Posgrado y/o Doctorado"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Chiquimula"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "¿Cual es tu nivel academico?",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Contacto",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "phoneNumberTextField",
+                "id": "phoneNumberTextField",
+                "required": true,
+                "isEnable": true,
+                "title": {
+                  "meta": {
+                    "text": "Número de teléfono",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "+502",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej: 55909022",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  },
+                  "prefixIcon": "http://icon.com/phone.png",
+                  "prefixText": {
+                    "meta": {
+                      "text": "+502",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textAlignment": "center",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#FF0000"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Formato de número inválido.",
+                    "regexInline": "^(\\\\+502)?[ -]?[0-9]{8}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength": 8,
+                "maxLength": 15,
+                "keyboardType": "phonePad"
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Tu correo electrónico",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Laborales",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Ningun"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Abogado"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Administrador"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Arquitecto"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Analista"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Biologo"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Bachiller"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Comerciante"
+                    },
+                    {
+                      "id": 9,
+                      "value": "Catedratico/a"
+                    },
+                    {
+                      "id": 10,
+                      "value": "Dentista"
+                    },
+                    {
+                      "id": 11,
+                      "value": "Dibujante"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar profesión u oficio",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu profesión u oficio",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Puesto actual",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. enfermero/a",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Dirección",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Zona",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              },
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Guatemala"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Escuintla"
+                    },
+                    {
+                      "id": 3,
+                      "value": "San Marcos"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Baja Verapaz"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Alta Verapaz"
+                    },
+                    {
+                      "id": 6,
+                      "value": "El Progreso"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Izabal"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Chiquimula"
+                    },
+                    {
+                      "id": 9,
+                      "value": "Zacapa"
+                    },
+                    {
+                      "id": 10,
+                      "value": "Santa Rosa"
+                    },
+                    {
+                      "id": 11,
+                      "value": "Jalapa"
+                    },
+                    {
+                      "id": 12,
+                      "value": "Jutiapa"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu departamento",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Amatitlan"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Boca del monte"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Chinautla"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Chuarrancho"
+                    },
+                    {
+                      "id": 5,
+                      "value": "El Fiscal Palencia"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu municipio",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Ingresos adicionales",
+            "errorTitle": "Algo salió mal...",
+            "subtitleCollapsed": "Si aplica, elige una o dos opciones",
+            "subtitleExpandable": "Presiona el botón de ayuda para conocer más",
+            "subtitleInfo": "Son todos aquellos ingresos que obtiene una persona...",
+            "errorSubtitle": "Revisa los datos de tus ingresos adicionales",
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Sin estudios"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Educación Primaria (1ero a 3er grado)"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Educación Primaria (4to a 6to grado)"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Educación Básica"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Educación Diversificada"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Educación Universitaria y/o Técnico"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Maestría, Posgrado y/o Doctorado"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Chiquimula"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "¿Cual es tu nivel academico?",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Beneficiario",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "listPicker",
+                "id": "listPicker",
+                "required": true,
+                "isEnable": true,
+                "listPicker": {
+                  "parentId": "parentId",
+                  "childId": "childId",
+                  "url": "",
+                  "items": [
+                    {
+                      "id": 1,
+                      "value": "Sin estudios"
+                    },
+                    {
+                      "id": 2,
+                      "value": "Educación Primaria (1ero a 3er grado)"
+                    },
+                    {
+                      "id": 3,
+                      "value": "Educación Primaria (4to a 6to grado)"
+                    },
+                    {
+                      "id": 4,
+                      "value": "Educación Básica"
+                    },
+                    {
+                      "id": 5,
+                      "value": "Educación Diversificada"
+                    },
+                    {
+                      "id": 6,
+                      "value": "Educación Universitaria y/o Técnico"
+                    },
+                    {
+                      "id": 7,
+                      "value": "Maestría, Posgrado y/o Doctorado"
+                    },
+                    {
+                      "id": 8,
+                      "value": "Chiquimula"
+                    }
+                  ],
+                  "searchText": {
+                    "meta": {
+                      "text": "Buscar departamento",
+                      "textSize": 12,
+                      "weightFont": "bold",
+                      "textAlignment": "center",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "Presiona para buscar",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  }
+                },
+                "title": {
+                  "meta": {
+                    "text": "¿Cual es tu nivel academico?",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "subTitle": {
+                  "meta": {
+                    "text": "Presiona para continuar",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "selectedText": {
+                  "meta": {
+                    "text": "Presiona para cambiar tu departamento",
+                    "textSize": 12,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "errorText": {
+                  "meta": {
+                    "text": "No olvides seleccionar una opción",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "leftIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "",
+                    "activeIcon": ""
+                  }
+                },
+                "rightIcon": {
+                  "icon": {
+                    "defaultTintColor": "#BBF7DC",
+                    "inactiveTintColor": "#BBF7DC",
+                    "activeTintColor": "#BBF7DC",
+                    "defaultIcon": "http://icon.com",
+                    "inactiveIcon": "http://icon.com",
+                    "activeIcon": "http://icon.com"
+                  }
+                },
+                "selectedValue": ""
+              },
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Cantidad de dependientes",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. 0-20",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          },
+          {
+            "required": true,
+            "title": "Referencia personal",
+            "errorTitle": "",
+            "subtitleCollapsed": "",
+            "subtitleExpandable": "",
+            "subtitleInfo": "",
+            "errorSubtitle": "",
+            "components": [
+              {
+                "type": "interactiveTextField",
+                "id": "interactiveTextField",
+                "required": true,
+                "isEnable":true,
+                "title": {
+                  "meta": {
+                    "text": "Nombre completo",
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  }
+                },
+                "textField": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#003865"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "ej. José Manuel Pérez López",
+                      "textSize": 16,
+                      "weightFont": "regular",
+                      "textColor": "#829DB4"
+                    }
+                  }
+                },
+                "errorLabel": {
+                  "meta": {
+                    "textSize": 14,
+                    "weightFont": "regular",
+                    "textColor": "#F13852"
+                  }
+                },
+                "validationErrors": [
+                  {
+                    "id": "errorRegex",
+                    "text": "Revisa tu información en este campo.",
+                    "regexInline":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+                  },
+                  {
+                    "id": "emptyError",
+                    "text": "No olvides llenar este campo."
+                  }
+                ],
+                "minLength":5,
+                "maxLength":15,
+                "keyboardType":"email",
+                "regex":"^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "footer": [
+      {
+        "action": {
+          "destination": "consumer_credits/v1/page/submit_payroll_prequalification",
+          "type": "navigate"
+        },
+        "disableBackgroundColor": "#829DB4",
+        "enableBackgroundColor": "#003865",
+        "id": "button",
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textAlignment": "center",
+            "textColor": "#ffffff",
+            "textSize": 14,
+            "weightFont": "bold"
+          }
+        },
+        "type": "button"
+      }
+    ]
+  }
+}

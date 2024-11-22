@@ -1,0 +1,160 @@
+{
+  "appInfo": {},
+  "data": {
+    "header": [],
+    "body": [
+      {
+        "addButton": {
+          "title": {
+            "meta": {
+              "text": "Añadir ingreso",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "regular"
+            }
+          }
+        },
+        "currencyInputsValues": [
+          {
+            "amountValue": "7000.00",
+            "currencyValue": "GTQ"
+          },
+          {
+            "amountValue": "8000.00",
+            "currencyValue": "USD"
+          },
+          {
+            "amountValue": "9000.00",
+            "currencyValue": "EUR"
+          }
+        ],
+        "bottomSheet": {
+          "content": [
+            {
+              "description": {
+                "meta": {
+                  "text": "Son todos los pagos mensuales que recibes de tus fuentes de ingresos.",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "normal"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "",
+                  "textAlignment": "left",
+                  "textColor": "#003865",
+                  "textSize": 16,
+                  "weightFont": "bold"
+                }
+              }
+            }
+          ],
+          "title": {
+            "meta": {
+              "text": "Ingresos totales mensuales",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "errorLabel": {
+          "meta": {
+            "text": "Ingresa una cantida valida",
+            "textAlignment": "left",
+            "textColor": "#F13852",
+            "textSize": 14,
+            "weightFont": "regular"
+          }
+        },
+        "id": "multipleCurrencyInputs",
+        "limitComponent": 3,
+        "listPicker": {
+          "items": [
+            {
+              "id": 1,
+              "value": "GTQ"
+            },
+            {
+              "id": 2,
+              "value": "USD"
+            },
+            {
+              "id": 3,
+              "value": "EUR"
+            },
+            {
+              "id": 4,
+              "value": "MXN"
+            }
+          ],
+          "title": {
+            "meta": {
+              "text": "Selecciona la moneda que deseas",
+              "textAlignment": "left",
+              "textColor": "#003865",
+              "textSize": 14,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "required": false,
+        "textField": {
+          "keyboardType": "decimalPad",
+          "maxLength": 9,
+          "meta": {
+            "text": "",
+            "textAlignment": "left",
+            "textColor": "#003865",
+            "textSize": 14,
+            "weightFont": "regular"
+          },
+          "minLength": 1,
+          "placeHolder": {
+            "meta": {
+              "text": "00.00",
+              "textAlignment": "left",
+              "textColor": "#829DB4",
+              "textSize": 14,
+              "weightFont": "regular"
+            }
+          },
+          "regex": "(?:\\+|\\-|\\$)?\\d{1,}(?:\\,?\\d{3})*(?:\\.\\d+)?%?",
+          "regexInline": "^[0-9]+(,[0-9]+)?$",
+          "value": ""
+        },
+        "title": {
+          "meta": {
+            "text": "Ingresos totales mensuales",
+            "textAlignment": "left",
+            "textColor": "#003865",
+            "textSize": 14,
+            "weightFont": "regular"
+          }
+        },
+        "type": "multipleCurrencyInputs",
+        "validationErrors": [
+          {
+            "id": "errorRegex",
+            "regexInline": "[0-9]+",
+            "text": "Revisa tu información en este campo."
+          },
+          {
+            "id": "emptyError",
+            "text": "No olvides llenar este campo."
+          },
+          {
+            "id": "minimumAmount",
+            "regexInline": "3000",
+            "text": "Tus ingresos deben ser mayor al ingresado."
+          }
+        ]
+      }
+    ],
+    "footer": []
+  }
+}

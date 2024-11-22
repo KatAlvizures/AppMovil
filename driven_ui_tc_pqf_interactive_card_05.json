@@ -1,0 +1,262 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "b54438f5ed05eb4faa2cd6e3bf02bc493b31f0b6e88a686af0eed02aa8fc0478409359b064d34ec8d85274412332d925554e013288d65e8a3ead21f6f708be3357a10681e889caec60417c93f001bc838a79f47b80e7d9937e9f8171b2bac2ee6573d25e649182966b6105b8cef3e11c5c993580e5d3cbd418c83f6759225f6b2539d644f2d26c77dc7664dc9c95d7a36ad53002c8916211f822862b91ed89fd8dc9188fb96a611c56b629b4d192bf686fa79d26a8fbbbd48d34346b6cf1e2a3"
+  },
+  "responseContent": {
+    "data": {
+      "id": "intro",
+      "title": "Solicita tu Tarjeta de Crédito",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 28
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "interactiveCard",
+          "id": "biCreditCardInteractive",
+          "labelIcon": {
+            "label": {
+              "meta": {
+                "text": "Toca la tarjeta para girarla",
+                "textSize": 14,
+                "weightFont": "regular",
+                "textAlignment": "left",
+                "textColor": "#373939"
+              }
+            },
+            "icon": {
+              "meta": {
+                "gravity": "left",
+                "foregroundColor": "#003765",
+                "icon": "https://cdn.icon-icons.com/icons2/2469/PNG/512/refresh_square_icon_149405.png"
+              }
+            }
+          },
+          "card": {
+            "id": "cardOrientation",
+            "vertical": {
+              "isDefault": true,
+              "image": "https://s3-alpha-sig.figma.com/img/ad6c/8a62/2cefec4629f58bc6838b3530a92c8837?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cmaJTXquf0FjxnOdT~LeJ~KNcWtDGVUn4qd8cxBJiBIn8WU3067tb-lhuGlkvpc7HVHXVihait8g9oSUsgEYxUdf9Jt6k6WkCieCQ0~669Fo4ZdnppDMJZ3beK3SGYZaHm1~jDsq--1Q0EEkMlCv3C9DESf1XCCKq54kyQjuoasnl5eGpDdJZIbFSMbfLns88lxB7~yGprpu95KJyIW-AXodqVYQgSE6yiPuPDabs7SgE03hIsD1o8tcZ9IDt6HGkpZsCnLmNXM8H4WpSkC0y0k9G-cgOPuROl-EZJpeNVqkYuEjuLfQHvHLryrKRgCGePCYextF3LC8oU5HuHIxRA__"
+            },
+            "horizontal": {
+              "isDefault": false,
+              "image": "https://s3-alpha-sig.figma.com/img/6262/84b8/a2036282032050e4386b219a4ac0c7b9?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gZ24~Kj1fMMNeSlo2R6eXJ8VNhVVncDnhmbQTG-9SqOuqUKxwllYq9HMzzoY5PieHvevpQC6njjuTEVbQunwUM6E01e27pPknzNUyTMGdpO9SqQE9KA3IwrDTI81VgRQqf~73rGM~lxZMCVjZXB8DlHDS4mfN0CtLJywUyMNLFjDlB37xt~7yLqVL-NGljPK~IL2OtEnOcMqrpt86GkwWRJiArJqy2buqMVwdbjokDIm8bMZPENZmndKp87bFd0UHMxbY0U6sabrkrgdV3tS0cbFhMiedE6TSqfBx29flQkgSF1j1QZ~vtUaMpHh91T8C~3fZyyKHh~DHEaRqwyKMQ__"
+            }
+          },
+          "interactiveTextField": {
+            "type": "interactiveTextField",
+            "required": true,
+            "id": "cardAliasTextField",
+            "title": {
+              "meta": {
+                "text": "Coloca tu alias",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#003865"
+              }
+            },
+            "textField": {
+              "meta": {
+                "text": "",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#000000"
+              },
+              "placeHolder": {
+                "meta": {
+                  "text": "ej. José",
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#c6c6c6"
+                }
+              }
+            },
+            "errorLabel": {
+              "meta": {
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#F13852"
+              }
+            },
+            "singleValidation": [
+              {
+                "id": "errorRegex",
+                "text": "Revisa tu información en este campo.",
+                "regexInline": ".+"
+              },
+              {
+                "id": "emptyError",
+                "text": "No olvides llenar este campo."
+              }
+            ],
+            "minLength": 5,
+            "maxLength": 25,
+            "keyboardType": "alphanumeric",
+            "regex": "^.+$"
+          }
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 28
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "type": "interactiveTextFieldsCard",
+          "id": "interactiveTextFieldsCard",
+          "required": false,
+          "isEnable": true,
+          "expandableCard": {
+            "icon": {
+              "meta": {
+                "icon": "http://icon.com"
+              }
+            },
+            "title": {
+              "meta": {
+                "text": "No. Corporativo de colaborador BI",
+                "textSize": 12,
+                "weightFont": "bold",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "successTitle": {
+              "meta": {
+                "text": "¡Todo listo!",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "errorTitle": {
+              "meta": {
+                "text": "Algo salió mal...",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "subtitleExpandable": {
+              "meta": {
+                "text": "Presional el botón de ayuda para conocer más.",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "subtitleCollapsed": {
+              "meta": {
+                "text": "Presiona para llenar los datos",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "successSubtitle": {
+              "meta": {
+                "text": "Presiona para ver tu beneficiario",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "errorSubtitle": {
+              "meta": {
+                "text": "Revisa los datos de tu beneficiario",
+                "textSize": 10,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            },
+            "helpIcon": {
+              "subtitleInfo": {
+                "meta": {
+                  "text": "Esta una larga descripción para colocar información...",
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#c6c6c6"
+                }
+              }
+            },
+            "optionsEditText": [
+              {
+                "interactiveTextField": {
+                  "id": "name",
+                  "title": {
+                    "meta": {
+                      "text": "",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  },
+                  "textField": {
+                    "meta": {
+                      "text": "",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#000000"
+                    },
+                    "placeHolder": {
+                      "meta": {
+                        "text": "ej. 54154565",
+                        "textSize": 10,
+                        "weightFont": "regular",
+                        "textColor": "#c6c6c6"
+                      }
+                    }
+                  },
+                  "errorLabel": {
+                    "meta": {
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  },
+                  "validationErrors": [
+                    {
+                      "id": "emptyError",
+                      "text": "No olvides llenar este campo."
+                    }
+                  ],
+                  "value": "",
+                  "minLength": 5,
+                  "maxLength": 25
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/process_personalization_card",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#9EA2A2",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Guardar",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

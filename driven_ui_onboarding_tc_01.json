@@ -1,0 +1,258 @@
+{
+  "info": {
+    "type": "success",
+    "message": "Proceso exitoso",
+    "sessionId": "36168ee4e9620d4c4130a995ccf43c20695afb5ad91d44b875e9591351829cd0cb92ea88af26d82f804b605c9915e6af43fba2629073f4a7b57730dbe7fed9a827ba0a42144c0d3f76e8b2e39cb765c237d76c1671d68da528c8c83d7bda36df24374ed7d168b1586f1b50c04293c1233abbbea1671ac8dd797c4ccddce63ff77f2bba05f613c3f6034ce534a52cf447c6729784409a6dbc15ddf54eef5418e3d26f4b2ed663fb700fbf9f5a3b769dd633064eb6a1c728cce239eab3fb595107"
+  },
+  "responseContent": {
+    "data": {
+      "id": "political_association",
+      "title": "Page title",
+      "body": [
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 24
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Te haremos unas preguntas",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "label",
+          "label": {
+            "meta": {
+              "text": "Queremos conocerte mejor",
+              "textAlignment": "center",
+              "textColor": "#4F5151",
+              "textSize": 16,
+              "weightFont": "regular"
+            }
+          },
+          "required": false,
+          "type": "label"
+        },
+        {
+          "id": "verticalSpacer",
+          "meta": {
+            "height": 16
+          },
+          "type": "verticalSpacer"
+        },
+        {
+          "bottomSheet": {
+            "content": [
+              {
+                "description": {
+                  "meta": {
+                    "secondaryText": "",
+                    "secondaryWeightFont": "",
+                    "text": "Quienes desempeñan o hayan desempeñado un cargo público relevante en Guatemala o en otro país, o aquella persona que tiene o se le ha confiado una función prominente en una organización internacional, así como los dirigentes de partidos políticos nacionales y de otro país que por su perfil están expuestos a riesgos inherentes a su nivelo posición jerárquica.",
+                    "textAlignment": "left",
+                    "textColor": "#373939",
+                    "textSize": 16,
+                    "weightFont": "normal"
+                  }
+                }
+              }
+            ],
+            "title": {
+              "meta": {
+                "text": "¿Quién es una persona expuesta políticamente? (PEP)",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 16,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "cardContent": {
+            "labelList": {
+              "labels": [
+                {
+                  "label": {
+                    "meta": {
+                      "text": "¿Eres una Persona Expuesta Políticamente (PEP)?",
+                      "textColor": "#4F5151",
+                      "textSize": 12,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "meta": {
+                      "text": "¿Posees un familiar PEP?",
+                      "textColor": "#4F5151",
+                      "textSize": 12,
+                      "weightFont": "regular"
+                    }
+                  }
+                },
+                {
+                  "label": {
+                    "meta": {
+                      "text": "¿Eres asociado cercano de un Persona Expuesta Políticamente (PEP)?",
+                      "textColor": "#4F5151",
+                      "textSize": 12,
+                      "weightFont": "regular"
+                    }
+                  }
+                }
+              ],
+              "symbol": "•",
+              "symbolColor": "#000000"
+            },
+            "options": [
+              {
+                "id": "yesPEP",
+                "label": {
+                  "meta": {
+                    "text": "Sí",
+                    "textAlignment": "left",
+                    "textColor": "#007AFF",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              {
+                "id": "noPEP",
+                "label": {
+                  "meta": {
+                    "text": "No",
+                    "textAlignment": "left",
+                    "textColor": "#007AFF",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                }
+              }
+            ],
+            "title": {
+              "meta": {
+                "text": "Verifica si alguna de estas condiciones aplica para ti:",
+                "textColor": "#4F5151",
+                "textSize": 14,
+                "weightFont": "regular"
+              }
+            }
+          },
+          "id": "politicalExposure",
+          "required": true,
+          "title": {
+            "meta": {
+              "text": "¿Tienes un familiar o allegado expuesto políticamente?",
+              "textColor": "#003865",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "radioButtonsCard"
+        },
+        {
+          "bottomSheet": {
+            "content": [
+              {
+                "description": {
+                  "meta": {
+                    "secondaryText": "(Q900,000.00)",
+                    "secondaryWeightFont": "bold",
+                    "text": "La persona individual o jurídica, nacional o extranjera, que sin importar la modalidad de la adquisición pública, provea o venda bienes, suministros, obras, servicios o arrendamientos al Estado o a cualquiera de las entidades, instituciones o sujetos indicados en el artículo 1 de la Ley de Contrataciones del Estado, por valor que exceda a novecientos mil quetzales (Q900,000.00), en uno o varios contratos, no importando la modalidad de adquisición pública.",
+                    "textAlignment": "left",
+                    "textColor": "#373939",
+                    "textSize": 16,
+                    "weightFont": "normal"
+                  }
+                }
+              }
+            ],
+            "title": {
+              "meta": {
+                "text": "¿Quién es un contratista o proveedor del estado? (CPE)",
+                "textAlignment": "left",
+                "textColor": "#003865",
+                "textSize": 16,
+                "weightFont": "bold"
+              }
+            }
+          },
+          "cardContent": {
+            "options": [
+              {
+                "id": "yesCPE",
+                "label": {
+                  "meta": {
+                    "text": "Sí",
+                    "textAlignment": "left",
+                    "textColor": "#007AFF",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                }
+              },
+              {
+                "id": "noCPE",
+                "label": {
+                  "meta": {
+                    "text": "No",
+                    "textAlignment": "left",
+                    "textColor": "#007AFF",
+                    "textSize": 14,
+                    "weightFont": "regular"
+                  }
+                }
+              }
+            ]
+          },
+          "id": "stateSupplier",
+          "required": true,
+          "title": {
+            "meta": {
+              "text": "¿Eres un contratista o proveedor del estado?",
+              "textColor": "#003865",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "radioButtonsCard"
+        }
+      ],
+      "footer": [
+        {
+          "action": {
+            "destination": "/api/onboarding_credit_card/v1/page/process_political_association",
+            "type": "navigate"
+          },
+          "alwaysActive": false,
+          "borderColor": null,
+          "disableBackgroundColor": "#829DB4",
+          "enableBackgroundColor": "#003865",
+          "id": "button",
+          "title": {
+            "meta": {
+              "text": "Siguiente",
+              "textAlignment": "center",
+              "textColor": "#FFFFFF",
+              "textSize": 16,
+              "weightFont": "bold"
+            }
+          },
+          "type": "button"
+        }
+      ]
+    }
+  }
+}

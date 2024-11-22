@@ -1,0 +1,2367 @@
+{
+  "info": {},
+  "data": {
+    "id": "test_container_expandable",
+    "title": "Solicita tu crédito",
+    "body": [
+      {
+        "id": "progressbar",
+        "progressbar": {
+          "meta": {
+            "barBackgroundColor": "#D9F6F9",
+            "barColor": "#00C1D4",
+            "step": 4,
+            "totalSteps": 5
+          },
+          "title": {
+            "meta": {
+              "text": "¡Completa tus datos!",
+              "textAlignment": "center",
+              "textColor": "#003865",
+              "textSize": 22,
+              "weightFont": "bold"
+            }
+          }
+        },
+        "required": false,
+        "type": "progressbar"
+      },
+      {
+        "id": "label",
+        "label": {
+          "meta": {
+            "text": "Ingresa o edita la información necesaria",
+            "textAlignment": "center",
+            "textColor": "#003865",
+            "textSize": 12,
+            "weightFont": "normal"
+          }
+        },
+        "required": true,
+        "type": "label"
+      },
+      {
+        "id": "interactiveComponentsCardPersonal",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Personales",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#004D55"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "listPicker",
+              "id": "listPickerAcademy",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "parentId": "parentId",
+                "childId": "childId",
+                "title": {
+                  "meta": {
+                    "text": "Selecciona tu nivel académico",
+                    "textSize": 16,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                },
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Sin estudios"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Educación Primaria (1ero a 3er grado)"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Educación Primaria (4to a 6to grado)"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Educación Básica"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Educación Diversificada"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Educación Universitaria y/o Técnico"
+                  },
+                  {
+                    "id": 7,
+                    "value": "Maestría, Posgrado y/o Doctorado"
+                  }
+                ],
+                "searchText": {
+                  "meta": {
+                    "text": "Buscar departamento",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  },
+                  "placeHolder": {
+                    "meta": {
+                      "text": "Presiona para buscar",
+                      "textSize": 10,
+                      "weightFont": "regular",
+                      "textColor": "#c6c6c6"
+                    }
+                  }
+                },
+                "selectedValue": {
+                  "id": 4,
+                  "value": "Educación Básica"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu nivel academico",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu nivel académico",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            },
+            {
+              "id": "currencyTextField",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Egresos mensuales",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: 2000.00",
+                    "textSize": 10,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "prefixText": {
+                  "meta": {
+                    "text": "GTQ",
+                    "textSize": 14,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#003865"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "text": "Hay un error revisa",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textColor": "#F13852"
+                }
+              },
+              "validationErrors": [
+                {
+                  "id": "errorRegex",
+                  "regexInline": "[0-8]",
+                  "text": "Monto inválido."
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "minLength": 8,
+              "maxLength": 9,
+              "keyboardType": "DECIMAL",
+              "type": "currencyTextField"
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textfieldNameTest",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Cantidad de dependientes",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "INT",
+              "regex": "^.+$"
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardResidence",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Domicilios",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#004D55"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "interactiveTextField",
+              "id": "textFieldDirection",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Dirección",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 29-21, Calle D, Col. Villa Her...",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "ALPHA",
+              "regex": "^.+$"
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textFieldZone",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Zona",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 8",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 1,
+              "maxLength": 3,
+              "keyboardType": "INT",
+              "regex": "^.+$"
+            },
+            {
+              "type": "listPicker",
+              "id": "pickerStatus",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Propia"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Alquilada"
+                  }
+                ],
+                "selectedValue": {
+                  "id": 1,
+                  "value": "Propia"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona el estatus de la vivienda",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar el estatus",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            },
+            {
+              "type": "checkbox",
+              "id": "checkbox",
+              "required": true,
+              "title": {
+                "meta": {
+                  "text": "Declaro que los fondos que utilizo para el pago mensual del producto son propios y que mi dirección es verídica. ",
+                  "textSize": 14,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "selectedValue": true,
+              "defaultValue": false,
+              "isEnabled": true
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardContact",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Contacto",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#004D55"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "phoneNumberTextField",
+              "id": "phoneNumberTextField",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Número de celular",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: 55909022",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                },
+                "prefixIcon": "http://icon.com/phone.png",
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#c6c6c6"
+                  }
+                }
+              },
+              "iconRight": {
+                "meta": {
+                  "icon": "http://icon.com"
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "validationErrors": [
+                {
+                  "id": "errorRegex",
+                  "text": "Formato de número inválido.",
+                  "regexInline": "^(\\\\+502)?[ -]?[0-9]{8}$"
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "minLength": 8,
+              "maxLength": 15,
+              "keyboardType": "INT"
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textfieldDependentsNumber2",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Tu correo electronico",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 50,
+              "keyboardType": "EMAIL",
+              "regex": "^.+$"
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardLaboral",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Laborales",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#004D55"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "listPicker",
+              "id": "pickerProfession",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "parentId": "parentId",
+                "childId": "childId",
+                "url": "/api/address/v3/departments",
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Ninguna"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Abogado"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Administrador"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Arquitecto"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Cont Publ Auditor"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Economista"
+                  },
+                  {
+                    "id": 7,
+                    "value": "Ingeniero"
+                  },
+                  {
+                    "id": 8,
+                    "value": "Medico"
+                  },
+                  {
+                    "id": 9,
+                    "value": "Ingeniero Quimico"
+                  },
+                  {
+                    "id": 10,
+                    "value": "Psicologo"
+                  },
+                  {
+                    "id": 11,
+                    "value": "Humanista"
+                  },
+                  {
+                    "id": 12,
+                    "value": "Bachiller"
+                  },
+                  {
+                    "id": 13,
+                    "value": "Maestro"
+                  },
+                  {
+                    "id": 14,
+                    "value": "Militar"
+                  },
+                  {
+                    "id": 15,
+                    "value": "Perito Contador"
+                  },
+                  {
+                    "id": 16,
+                    "value": "Programador"
+                  },
+                  {
+                    "id": 17,
+                    "value": "Secretaria"
+                  },
+                  {
+                    "id": 18,
+                    "value": "Analista"
+                  },
+                  {
+                    "id": 19,
+                    "value": "Estudiante"
+                  },
+                  {
+                    "id": 20,
+                    "value": "Catedrático/a"
+                  },
+                  {
+                    "id": 21,
+                    "value": "Otros"
+                  },
+                  {
+                    "id": 22,
+                    "value": "Lic. Informatica"
+                  },
+                  {
+                    "id": 23,
+                    "value": "Mecanico Automotriz"
+                  },
+                  {
+                    "id": 24,
+                    "value": "Mecanico Industrial"
+                  },
+                  {
+                    "id": 25,
+                    "value": "Ing. Agronomo"
+                  },
+                  {
+                    "id": 26,
+                    "value": "Enfermero/A"
+                  },
+                  {
+                    "id": 27,
+                    "value": "Cosmetologa"
+                  },
+                  {
+                    "id": 28,
+                    "value": "Estilista"
+                  },
+                  {
+                    "id": 29,
+                    "value": "Veterinario"
+                  },
+                  {
+                    "id": 30,
+                    "value": "Zootecnista"
+                  },
+                  {
+                    "id": 31,
+                    "value": "Tipografo"
+                  },
+                  {
+                    "id": 32,
+                    "value": "Dentista"
+                  },
+                  {
+                    "id": 33,
+                    "value": "Aviador"
+                  },
+                  {
+                    "id": 34,
+                    "value": "Litografo"
+                  },
+                  {
+                    "id": 35,
+                    "value": "Lic. Pedagogia"
+                  },
+                  {
+                    "id": 36,
+                    "value": "Dibujante"
+                  },
+                  {
+                    "id": 37,
+                    "value": "Radiotecnico"
+                  },
+                  {
+                    "id": 38,
+                    "value": "Antropologo/A"
+                  },
+                  {
+                    "id": 39,
+                    "value": "Perito Mercadotecnia"
+                  },
+                  {
+                    "id": 40,
+                    "value": "Visitador Medico"
+                  },
+                  {
+                    "id": 41,
+                    "value": "Auditor"
+                  },
+                  {
+                    "id": 42,
+                    "value": "Piloto Automotriz"
+                  },
+                  {
+                    "id": 43,
+                    "value": "Farmaceutico/Ca"
+                  },
+                  {
+                    "id": 44,
+                    "value": "Editor"
+                  },
+                  {
+                    "id": 45,
+                    "value": "Publicista"
+                  },
+                  {
+                    "id": 46,
+                    "value": "Electromecanico"
+                  },
+                  {
+                    "id": 47,
+                    "value": "Periodista"
+                  },
+                  {
+                    "id": 48,
+                    "value": "Fisioterapista"
+                  },
+                  {
+                    "id": 49,
+                    "value": "Aeromosa"
+                  },
+                  {
+                    "id": 50,
+                    "value": "Perito Agronomo"
+                  },
+                  {
+                    "id": 51,
+                    "value": "Ortodoncista"
+                  },
+                  {
+                    "id": 52,
+                    "value": "Lic. En Ccss De La Comunicacion"
+                  },
+                  {
+                    "id": 53,
+                    "value": "Sacerdote"
+                  },
+                  {
+                    "id": 54,
+                    "value": "Nutriologo"
+                  },
+                  {
+                    "id": 55,
+                    "value": "Diseñador Grafico"
+                  },
+                  {
+                    "id": 56,
+                    "value": "Lic En Mercadeo"
+                  },
+                  {
+                    "id": 57,
+                    "value": "Sociologo"
+                  },
+                  {
+                    "id": 58,
+                    "value": "Trabaj Social"
+                  },
+                  {
+                    "id": 59,
+                    "value": "Biólogo"
+                  },
+                  {
+                    "id": 60,
+                    "value": "Arqueologo"
+                  },
+                  {
+                    "id": 61,
+                    "value": "Dermatologo"
+                  },
+                  {
+                    "id": 62,
+                    "value": "Topografo"
+                  },
+                  {
+                    "id": 63,
+                    "value": "Perito En Computacion"
+                  },
+                  {
+                    "id": 64,
+                    "value": "Contralor"
+                  },
+                  {
+                    "id": 65,
+                    "value": "Perito Electronica"
+                  },
+                  {
+                    "id": 66,
+                    "value": "Futbolista Prof"
+                  },
+                  {
+                    "id": 67,
+                    "value": "Fotografo Prof"
+                  },
+                  {
+                    "id": 68,
+                    "value": "Músico Filarmonico"
+                  },
+                  {
+                    "id": 69,
+                    "value": "Asesor Seguros"
+                  },
+                  {
+                    "id": 70,
+                    "value": "Perito Admon Public"
+                  },
+                  {
+                    "id": 71,
+                    "value": "Psiquiatra"
+                  },
+                  {
+                    "id": 72,
+                    "value": "Paramedico"
+                  },
+                  {
+                    "id": 73,
+                    "value": "Perito Admon Emp"
+                  },
+                  {
+                    "id": 74,
+                    "value": "Perito Forestal"
+                  },
+                  {
+                    "id": 75,
+                    "value": "Agricultor"
+                  },
+                  {
+                    "id": 76,
+                    "value": "Comerciante"
+                  },
+                  {
+                    "id": 77,
+                    "value": "Terapeuta"
+                  },
+                  {
+                    "id": 78,
+                    "value": "Mercadologo/A"
+                  },
+                  {
+                    "id": 79,
+                    "value": "Perito En Construccion"
+                  },
+                  {
+                    "id": 80,
+                    "value": "Oficinista"
+                  },
+                  {
+                    "id": 81,
+                    "value": "Bibliotecologa"
+                  },
+                  {
+                    "id": 82,
+                    "value": "Jornalero"
+                  },
+                  {
+                    "id": 83,
+                    "value": "Pediatra"
+                  },
+                  {
+                    "id": 84,
+                    "value": "Ingeniero Agronomo"
+                  },
+                  {
+                    "id": 85,
+                    "value": "Electricista"
+                  },
+                  {
+                    "id": 86,
+                    "value": "Pastor Evangelico"
+                  },
+                  {
+                    "id": 87,
+                    "value": "Ofic Del Ejercito"
+                  },
+                  {
+                    "id": 88,
+                    "value": "Admon En Recursos Humanos"
+                  },
+                  {
+                    "id": 89,
+                    "value": "Lic En Sistemas"
+                  },
+                  {
+                    "id": 90,
+                    "value": "Lic En Ciencias Politicas"
+                  },
+                  {
+                    "id": 91,
+                    "value": "Quimico Biologo"
+                  },
+                  {
+                    "id": 92,
+                    "value": "Lic. Quimico Farmaceutico"
+                  },
+                  {
+                    "id": 93,
+                    "value": "Vicepresidente De Operaciones"
+                  },
+                  {
+                    "id": 94,
+                    "value": "Licenciado"
+                  },
+                  {
+                    "id": 95,
+                    "value": "Técnico"
+                  },
+                  {
+                    "id": 96,
+                    "value": "Empresario"
+                  },
+                  {
+                    "id": 97,
+                    "value": "Auxiliar"
+                  },
+                  {
+                    "id": 98,
+                    "value": "Promotor De Ventas"
+                  }
+                ],
+                "selectedValue": {
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu profesion u oficio",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu departamento",
+                  "textSize": 10,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#000000"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textFieldEmail",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Tu correo electronico",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. prueba@gmail.com",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "ALPHA",
+              "regex": "^.+$"
+            },
+            {
+              "type": "phoneNumberTextField",
+              "id": "phoneNumberTextField",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Número de teléfono",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#000000"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: 55909022",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "prefixIcon": "http://icon.com/phone.png",
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#c6c6c6"
+                  }
+                }
+              },
+              "iconRight": {
+                "meta": {
+                  "icon": "http://icon.com"
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#FF0000"
+                }
+              },
+              "validationErrors": [
+                {
+                  "id": "errorRegex",
+                  "text": "Formato de número inválido.",
+                  "regexInline": "^(\\\\+502)?[ -]?[0-9]{8}$"
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "minLength": 8,
+              "maxLength": 15,
+              "keyboardType": "PHONE"
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textFieldDirection",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Dirección",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. Sixtino 6 avenida 6-63",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "ALPHA",
+              "regex": "^.+$"
+            },
+            {
+              "type": "interactiveTextField",
+              "id": "textFieldZone",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Zona",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 1,
+              "maxLength": 3,
+              "keyboardType": "INT",
+              "regex": "^.+$"
+            },
+            {
+              "type": "listPicker",
+              "id": "pickerDepartment",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "parentId": "parentId",
+                "childId": "childId",
+                "url": "/api/address/v3/departments",
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "items": [
+                  {"id":1,"value":"Guatemala"},
+                  {"id":2,"value":"Escuintla"},
+                  {"id":3,"value":"San Marcos"}
+                ],
+                "selectedValue": {
+                  "id": 1,
+                  "value": "Guatemala"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu departamento",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para cambiar tu departamento",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu departamento",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            },
+            {
+              "type": "listPicker",
+              "id": "pickerMunicipalities",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "parentId": "parentId",
+                "childId": "childId",
+                "url": "/api/address/v3/municipalities",
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "items": [
+                  {"id":1,"value":"Guatemala"},
+                  {"id":2,"value":"Villa Nueva"},
+                  {"id":3,"value":"Mixco"}
+                ],
+                "selectedValue": {
+                  "id": 1,
+                  "value": "San Miguel Petapa"
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona tu municipio",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para cambiar tu municipio",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar tu municipio",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardAdditionalTickets",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Ingresos adicionales",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "Si aplica, elige una o dos opciones",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Presiona el botón de ayuda para conocer más.",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "Si todos aquellos ingresos que obtiene una persona para generar dinero o recursos economicos",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#004D55"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "id": "interactiveTextFieldSelector",
+              "type": "interactiveTextFieldSelector",
+              "interactiveSelector": {
+                "hasSingleSelection": false,
+                "items": [
+                  {
+                    "id": "employmentRelation",
+                    "icon": "https://cdn-icons-png.freepik.com/256/616/616168.png",
+                    "label": {
+                      "meta": {
+                        "text": "Relación de dependencia",
+                        "textSize": 10,
+                        "weightFont": "bold",
+                        "textAlignment": "center",
+                        "textColor": "#000000",
+                        "secondaryTextColor": "#000000",
+                        "secondaryText": "demora de 3 a 5 minutos."
+                      }
+                    },
+                    "isSelected": true,
+                    "isEnabled": false
+                  },
+                  {
+                    "id": "ownBusiness",
+                    "icon": "https://cdn-icons-png.freepik.com/256/4300/4300059.png",
+                    "label": {
+                      "meta": {
+                        "text": "Negocio propio",
+                        "textSize": 10,
+                        "weightFont": "bold",
+                        "textAlignment": "start",
+                        "textColor": "#000000",
+                        "secondaryTextColor": "#000000",
+                        "secondaryText": "demora de 3 a 5 minutos."
+                      }
+                    },
+                    "isSelected": true,
+                    "isEnabled": true,
+                    "interactiveTextField": {
+                      "id": "businessNameTextField",
+                      "type": "interactiveTextField",
+                      "required": true,
+                      "isEnable": true,
+                      "title": {
+                        "meta": {
+                          "text": "Negocio propio",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#c6c6c6"
+                        }
+                      },
+                      "textField": {
+                        "meta": {
+                          "text": "Nombre comercial",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#000000"
+                        },
+                        "placeHolder": {
+                          "meta": {
+                            "text": "ej. Nombre comercial",
+                            "textSize": 10,
+                            "weightFont": "regular",
+                            "textColor": "#c6c6c6"
+                          }
+                        }
+                      },
+                      "bottomSheet": {
+                        "title": {
+                          "meta": {
+                            "text": "Negocio propio",
+                            "textSize": 16,
+                            "weightFont": "bold",
+                            "textAlignment": "left",
+                            "textColor": "#003865"
+                          }
+                        },
+                        "content": [
+                          {
+                            "description": {
+                              "meta": {
+                                "text": "Establecimiento comercial, que tiene como objetivo satisfacer las necesidades...",
+                                "textSize": 16,
+                                "weightFont": "normal",
+                                "textAlignment": "right",
+                                "textColor": "#003865"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "errorLabel": {
+                        "meta": {
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#c6c6c6"
+                        }
+                      },
+                      "singleValidation": [
+                        {
+                          "id": "errorRegex",
+                          "text": "Revisa tu información en este campo.",
+                          "regexInline": ".+"
+                        },
+                        {
+                          "id": "emptyError",
+                          "text": "No olvides llenar este campo."
+                        }
+                      ],
+                      "minLength": 5,
+                      "maxLength": 50,
+                      "keyboardType": "alphanumeric",
+                      "regex": "^.+$"
+                    }
+                  },
+                  {
+                    "id": "otherSources",
+                    "icon": "https://cdn-icons-png.flaticon.com/256/88/88961.png",
+                    "label": {
+                      "meta": {
+                        "text": "Otras fuentes",
+                        "textSize": 10,
+                        "weightFont": "bold",
+                        "textAlignment": "start",
+                        "textColor": "#000000",
+                        "secondaryTextColor": "#000000",
+                        "secondaryText": "demora de 3 a 5 minutos."
+                      }
+                    },
+                    "isSelected": false,
+                    "isEnabled": true,
+                    "interactiveTextField": {
+                      "id": "otherSourcesTextField",
+                      "type": "interactiveTextField",
+                      "required": true,
+                      "isEnable": true,
+                      "title": {
+                        "meta": {
+                          "text": "Otras fuentes",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#c6c6c6"
+                        }
+                      },
+                      "textField": {
+                        "meta": {
+                          "text": "",
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#000000"
+                        },
+                        "placeHolder": {
+                          "meta": {
+                            "text": "ej. Renta, actividades profesionales, etc",
+                            "textSize": 10,
+                            "weightFont": "regular",
+                            "textColor": "#c6c6c6"
+                          }
+                        }
+                      },
+                      "bottomSheet": {
+                        "title": {
+                          "meta": {
+                            "text": "Otras fuentes",
+                            "textSize": 16,
+                            "weightFont": "bold",
+                            "textAlignment": "left",
+                            "textColor": "#003865"
+                          }
+                        },
+                        "content": [
+                          {
+                            "description": {
+                              "meta": {
+                                "text": "Cualquier fuente de ingreso o beneficio económico...",
+                                "textSize": 16,
+                                "weightFont": "normal",
+                                "textAlignment": "right",
+                                "textColor": "#003865"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "errorLabel": {
+                        "meta": {
+                          "textSize": 10,
+                          "weightFont": "regular",
+                          "textColor": "#c6c6c6"
+                        }
+                      },
+                      "singleValidation": [
+                        {
+                          "id": "errorRegex",
+                          "text": "Revisa tu información en este campo.",
+                          "regexInline": ".+"
+                        },
+                        {
+                          "id": "emptyError",
+                          "text": "No olvides llenar este campo."
+                        }
+                      ],
+                      "minLength": 5,
+                      "maxLength": 50,
+                      "keyboardType": "alphanumeric",
+                      "regex": "^.+$"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardBeneficiary",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Beneficiario",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Presiona el botón de ayuda para conocer más.",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "Es la persona que recibirá el total o una parte de los fondos de la cobertura del seguro médico tras el fallecimiento del titular.",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "interactiveTextField",
+              "id": "textfieldDependentsNumberBeneficiary",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Nombre completo",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "INT",
+              "regex": "^.+$"
+            },
+            {
+              "type": "listPicker",
+              "id": "pickerRelationshipBeneficiary",
+              "required": true,
+              "isEnable": true,
+              "listPicker": {
+                "title": {
+                  "meta": {
+                    "text": "",
+                    "textSize": 10,
+                    "weightFont": "bold",
+                    "textAlignment": "center",
+                    "textColor": "#000000"
+                  }
+                },
+                "items": [
+                  {
+                    "id": 1,
+                    "value": "Padre"
+                  },
+                  {
+                    "id": 2,
+                    "value": "Madre"
+                  },
+                  {
+                    "id": 3,
+                    "value": "Hermano/a"
+                  },
+                  {
+                    "id": 4,
+                    "value": "Conyuge"
+                  },
+                  {
+                    "id": 5,
+                    "value": "Hijo/a"
+                  },
+                  {
+                    "id": 6,
+                    "value": "Otro"
+                  },
+                  {
+                    "id": 7,
+                    "value": "No existe parentesco"
+                  }
+                ],
+                "selectedValue": {
+
+                }
+              },
+              "title": {
+                "meta": {
+                  "text": "Selecciona el parentesco",
+                  "textSize": 14,
+                  "weightFont": "bold",
+                  "textAlignment": "center",
+                  "textColor": "#003865"
+                }
+              },
+              "subTitle": {
+                "meta": {
+                  "text": "Presiona para continuar",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "selectedText": {
+                "meta": {
+                  "text": "Presiona para cambiar el parentesco",
+                  "textSize": 12,
+                  "weightFont": "normal",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "errorText": {
+                "meta": {
+                  "text": "No olvides seleccionar una opción",
+                  "textSize": 12,
+                  "weightFont": "light",
+                  "textAlignment": "center",
+                  "textColor": "#004D55"
+                }
+              },
+              "leftIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "",
+                  "activeIcon": ""
+                }
+              },
+              "rightIcon": {
+                "icon": {
+                  "defaultTintColor": "#BBF7DC",
+                  "inactiveTintColor": "#BBF7DC",
+                  "activeTintColor": "#BBF7DC",
+                  "defaultIcon": "http://icon.com",
+                  "inactiveIcon": "http://icon.com",
+                  "activeIcon": "http://icon.com"
+                }
+              }
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      },
+      {
+        "id": "interactiveComponentsCardPersonalReference",
+        "componentCard": {
+          "isCollapsed": true,
+          "title": {
+            "meta": {
+              "text": "Referencia personal",
+              "textSize": 14,
+              "weightFont": "regular",
+              "textColor": "#003865"
+            }
+          },
+          "subtitleCollapsed": {
+            "meta": {
+              "text": "",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "subtitleExpandable": {
+            "meta": {
+              "text": "Presional el botón de ayuda para conocer más.",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#004D55"
+            }
+          },
+          "helpIcon": {
+            "subtitleInfo": {
+              "meta": {
+                "text": "Recuerda que en tus referencias no debes incluir a familiares. Puedes incluir a conocidos que den certeza de tu excelente conducta.",
+                "textSize": 12,
+                "weightFont": "regular",
+                "textColor": "#c6c6c6"
+              }
+            }
+          },
+          "errorTitle": {
+            "meta": {
+              "text": "Algo salió mal...",
+              "textSize": 12,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "errorSubtitle": {
+            "meta": {
+              "text": "Revisa tus datos personales.",
+              "textSize": 10,
+              "weightFont": "regular",
+              "textColor": "#c6c6c6"
+            }
+          },
+          "components": [
+            {
+              "type": "interactiveTextField",
+              "id": "textfieldDependentsNumberPersonalReference1",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Nombre completo",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej. 0-20",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#829DB4"
+                  }
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#F13852"
+                }
+              },
+              "singleValidation": [
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo.",
+                  "regexInline": ".+"
+                }
+              ],
+              "minLength": 5,
+              "maxLength": 15,
+              "keyboardType": "ALPHA",
+              "regex": "^.+$"
+            },
+            {
+              "type": "phoneNumberTextField",
+              "id": "phoneNumberTextFieldPersonalReference1",
+              "required": true,
+              "isEnable": true,
+              "title": {
+                "meta": {
+                  "text": "Número de teléfono",
+                  "textSize": 14,
+                  "weightFont": "regular",
+                  "textColor": "#003865"
+                }
+              },
+              "textField": {
+                "meta": {
+                  "text": "",
+                  "textSize": 16,
+                  "weightFont": "regular",
+                  "textColor": "#000000"
+                },
+                "placeHolder": {
+                  "meta": {
+                    "text": "ej: 55909022",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textColor": "#c6c6c6"
+                  }
+                },
+                "prefixIcon": "http://icon.com/phone.png",
+                "prefixText": {
+                  "meta": {
+                    "text": "+502",
+                    "textSize": 16,
+                    "weightFont": "regular",
+                    "textAlignment": "center",
+                    "textColor": "#c6c6c6"
+                  }
+                }
+              },
+              "iconRight": {
+                "meta": {
+                  "icon": "http://icon.com"
+                }
+              },
+              "errorLabel": {
+                "meta": {
+                  "textSize": 10,
+                  "weightFont": "regular",
+                  "textColor": "#FF0000"
+                }
+              },
+              "validationErrors": [
+                {
+                  "id": "errorRegex",
+                  "text": "Formato de número inválido.",
+                  "regexInline": "^(\\\\+502)?[ -]?[0-9]{8}$"
+                },
+                {
+                  "id": "emptyError",
+                  "text": "No olvides llenar este campo."
+                }
+              ],
+              "minLength": 8,
+              "maxLength": 15,
+              "keyboardType": "PHONE"
+            }
+          ]
+        },
+        "required": true,
+        "type": "interactiveComponentCard"
+      }
+    ],
+    "footer": [
+      {
+        "action": {
+          "destination": "consumer_credits/v1/page/submit_payroll_prequalification",
+          "type": "navigate"
+        },
+        "disableBackgroundColor": "#829DB4",
+        "enableBackgroundColor": "#003865",
+        "id": "button",
+        "title": {
+          "meta": {
+            "text": "Continuar",
+            "textAlignment": "center",
+            "textColor": "#ffffff",
+            "textSize": 14,
+            "weightFont": "bold"
+          }
+        },
+        "type": "button"
+      }
+    ]
+  }
+}
